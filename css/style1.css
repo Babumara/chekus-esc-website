@@ -1,0 +1,5741 @@
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Site Reset List And Typography
+
+============================== index.html =========================
+
+1. INDEX-V1 Header section
+2. INDEX-V1 welcome section
+3. INDEX-V1 about section
+4. INDEX-V1 our secrets section
+5. INDEX-V1 vidoe popup section
+6. INDEX-V1 Photo Gallery
+7. INDEX-V1 Pricing Plan
+8. INDEX-V1 Call To Action
+9. INDEX-V1 Expert Beauticians
+10. INDEX-V1 News Feeds
+11. INDEX-V1 Our Partners
+12. INDEX-V1 Footer Section
+
+============================== index-v2.html =========================
+
+1. INDEX-V2 Header section
+2. INDEX-V2 welcome section
+3. INDEX-V2 Simple text with image version 2
+4. INDEX-V2 Exclusive Products
+5. INDEX-V2 Welcome to our barbar shop
+6. INDEX-V2 How It Works
+7. INDEX-V2 Video background section
+8. INDEX-V2 Our Services
+9. INDEX-V2 Testimonial section
+10. INDEX-V2 Our Pricing
+11. INDEX-V2 News Feeds
+12. INDEX-V2 Our Partners
+13. INDEX-V2 Subscribe Section
+14. INDEX-V2 Footer Section
+
+
+============================ index-v3.html =====================================
+
+1. INDEX-V3 header section
+2. INDEX-V3 welcome section
+3. INDEX-V3 Our Services
+4. INDEX-V3 Get Appoinment
+5. INDEX-V3 Our Pricing
+6. INDEX-V3 Call To Action
+7. INDEX-V3 Fun Factory
+8. INDEX-V3 Footer
+
+============================ index-v4.html =====================================
+
+1. INDEX-V4 welcome section
+2. INDEX-V4 Our Features
+3. INDEX-V4 Our Pricing
+
+============================ index-v5.html =====================================
+
+1. INDEX-V5 Header Section
+2. INDEX-V5 welcome Section
+3. INDEX-V5 Face & Beauty Care
+4. INDEX-V5 About Us
+5. INDEX-V5 Popular Services
+6. INDEX-V5 Video Section
+7. INDEX-V5 Expert Beautician
+8. INDEX-V5 Best Features
+9. INDEX-V5 Fun Fact Version 2
+10. INDEX-V5 Client Review
+11. INDEX-V5 Call to action
+12. INDEX-V5 Footer section
+
+============================ inner page start ==========================
+
+1. INNER PAGE header section
+2. INNER PAGE welcome section
+3. INNER PAGE square service section
+4. INNER PAGE Popular Services
+5. INNER PAGE Contact.html
+6. INNER PAGE Contact-v2.html
+7. INNER PAGE blog.html
+8. INNER blog-post.html content
+9. INNER faq.html content
+10. INNER shop.html content
+11. INNER 404.html content
+12. INNER comming-soon.html content
+13. INNER comming-soon-v2.html content
+14. INNER contact-v3.html content
+15. INNER service-v2.html content
+16. INNER service-v3.html content
+17. INNER sponsor.html content
+18. INNER team-v2.html content
+19. INNER square-service.html content
+20. INNER call-to-action.html content
+21. INNER about-v5.html content
+22. INNER footer.html content
+23. INNER pricing-v2.html content
+24. INNER portfolio-single.html content
+25. INNER product-details.html content
+26. INNER cart.html content
+
+
+
+-------------------------------------------------------------------*/
+
+/*======================================================================================
+								1. Site Reset List And Typography
+===============================================================================*/
+
+/* css variable list */
+
+:root {
+    /*color purple*/
+    --color-purple: #6A1B9A;
+    /* color navy blue */
+    --color-navy-blue: #590D88;
+    /* color pink */
+    --color-pink: #EC5598;
+    /* color pink 2 */
+    --color-pink-2: #E6377A;
+    /* color white */
+    --color-white: #FFFFFF;
+    /* color semi black */
+    --color-semi-black: #222222;
+    /* color light blck */
+    --color-semi-ash: #777777;
+    /* color sky blue */
+    --color-sky-blue: #00BCD4;
+    /* color light red */
+    --light-red: #FF4641;
+    /* color orange */
+    --color-orange: #F79700;
+    /* cyan color */
+    --color-cyan: #4DB6AC;
+    /* color light chocolate */
+    --color-chocolate: #E3BDA8;
+    /* font family cursive */
+    --font-cursive: 'Niconne', cursive;
+    /* icons font 1 */
+    --font-icons-1: 'FontAwesome';
+    /* icons font 2 */
+    --font-icons-2: 'iconfont';
+    /* box-shadow hover */
+    --hover-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.1);
+    /* box-shadow primary */
+    --primary-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--color-white);
+    font-size: 14px;
+    color: var(--color-semi-ash);
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+a,
+button,
+a span {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn.extra-width {
+    padding: 13px 40px;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    /*    direction: rtl;*/
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    outline: none;
+}
+
+.form-control {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #f56363;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+button:focus,
+select:focus,
+select:active {
+    outline: none;
+}
+
+/*
+Section
+*/
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.element-header-example {
+    font-weight: 200;
+    text-transform: capitalize;
+    border-bottom: 1px dotted #EDEDED;
+    padding-bottom: 30px;
+}
+
+.xs-row {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.xs-row .xs-col-5 {
+    width: calc((100% / 12) * 5);
+    padding: 0 15px;
+}
+
+.xs-row .xs-col-2 {
+    width: calc((100% / 12) * 2.3);
+    padding: 0 15px;
+    margin: 0 20px;
+}
+
+.xs-row .xs-col-9 {
+    width: calc((100% / 12) * 9);
+    padding: 0 15px;
+}
+
+.xs-row .xs-col-3 {
+    width: calc((100% / 12) * 3);
+    padding: 0 15px;
+}
+
+/* ===================== beautypress bg =================== */
+
+.kolkatacity-bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+/* beautypress no background color */
+
+.beautypress-no-bg {
+    background-color: transparent !important;
+}
+
+/* ====================== beautypress buttons =========================== */
+
+.kolkatacity-btn-wraper a {
+    margin: 0 20px 0 0;
+}
+
+.kolkatacity-btn-wraper a:last-child {
+    margin: 0;
+}
+
+.beautypress-btn {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 36px;
+    z-index: 1;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: var(--color-semi-black);
+    color: var(--color-white);
+    text-transform: uppercase;
+    overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 700;
+}
+
+.beautypress-btn.bg-color-white:hover {
+    color: var(--color-semi-black) !important;
+}
+
+.xs-btn {
+    overflow: hidden;
+    /*margin: 1rem auto;*/
+    text-transform: uppercase;
+    background: #6A1B9A;
+    border-radius: 25px;
+    padding: 15px 36px;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.xs-btn span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #EC5598;
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.xs-btn:hover span {
+    width: 335%;
+    height: 562.5px;
+}
+
+.xs-btn.round-btn {
+    border-radius: 25px;
+}
+
+.xs-btn.box-shadow-btn {
+    box-shadow: var(--primary-shadow);
+}
+
+.beautypress-btn.block-btn {
+    width: 100%;
+}
+
+.beautypress-btn.round-btn {
+    border-radius: 25px;
+}
+
+.beautypress-btn.box-shadow-btn {
+    box-shadow: var(--primary-shadow);
+}
+
+.beautypress-btn:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.kolkatacity-welcome-slider-wraper .customNavigation .welcome-next,
+.kolkatacity-welcome-slider-wraper .customNavigation .welcome-prev,
+.kolkatacity-welcome-slider .owl-nav .owl-prev,
+.kolkatacity-welcome-slider .owl-nav .owl-next {
+    background-color: transparent;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.kolkatacity-welcome-slider-wraper .customNavigation .next-prev-btn {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.039);
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    background-color: var(--color-cyan);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    color: var(--color-white);
+    font-size: 2.143em;
+    text-align: center;
+    line-height: 70px;
+}
+
+.kolkatacity-welcome-slider-wraper .customNavigation .next-prev-btn:hover {
+    background-color: var(--color-chocolate);
+    color: var(--color-white);
+}
+
+.beautypress-btn:hover {
+    color: var(--color-white) !important;
+}
+
+.xs-btn:hover {
+    color: var(--color-white) !important;
+}
+
+.xs-btn.bg-color-cyan span {
+    background-color: var(--color-chocolate);
+}
+
+.xs-btn.bg-chocolate span {
+    background-color: var(--color-cyan);
+}
+
+.xs-btn.bg-color-pink span,
+.xs-btn.bg-color-sky-blue span,
+.xs-btn.bg-color-white span {
+    background-color: var(--color-purple);
+}
+
+.xs-btn.bg-color-purple span {
+    background-color: var(--color-pink);
+}
+
+.xs-btn.bg-color-purple.purple-2 span {
+    background-color: var(--light-red);
+}
+
+.xs-btn.bg-color-red span {
+    background-color: var(--color-purple);
+}
+
+.xs-btn.bg-color-green span {
+    background-color: var(--light-red);
+}
+
+.xs-btn.small-round-btn span {
+    background-color: #339188;
+}
+
+.beautypress-btn.small-round-btn {
+    border-radius: 4px;
+    box-shadow: var(--primary-shadow);
+    font-weight: 700;
+    padding: 15px 42px;
+    background-color: #58B7AC;
+}
+
+.gradient-btn {
+    background-image: -webkit-linear-gradient( 0deg, rgb(211, 16, 39) 0%, rgb(125, 0, 254) 0%, rgb(213, 43, 255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(211, 16, 39) 0%, rgb(125, 0, 254) 0%, rgb(213, 43, 255) 100%);
+}
+
+/* ================= section padding =======================*/
+
+.section-padding {
+    padding: 25px 20px;
+}
+
+.kolkatacity-padding-bottom {
+    padding: 0 0 25px;
+}
+
+/* ==================== section heading ================================*/
+
+.kolkatacity-section-headinig {
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+.kolkatacity-section-headinig.beautypress-section-padding-minus {
+    padding: 0 0 80px 0;
+}
+
+.kolkatacity-section-headinig h2 {
+    margin: 0 0 12px;
+    color: var(--color-pink);
+    font-family: var(--font-cursive);
+    font-size: 2.143em;
+}
+
+.kolkatacity-section-headinig h3 {
+    margin: 0;
+    color: var(--color-semi-black);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 2.857em;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-section-headinig.kolkatacity-section-headinig-white h3 {
+    color: var(--color-white)
+}
+
+/* water mark title */
+
+.kolkatacity-watermark-title h2 {
+    position: relative;
+}
+
+.kolkatacity-watermark-title h2:before {
+    position: absolute;
+    content: attr(data-title);
+    left: 0;
+    top: 0;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-semi-black);
+}
+
+/*=========================== image Magnific Popup for zoom animation  =======================*/
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*============================== color list =======================================*/
+
+.color-pink {
+    color: var(--color-pink) !important;
+}
+
+.color-purple {
+    color: var(--color-purple) !important;
+}
+
+.color-black {
+    color: var(--color-semi-black) !important;
+}
+
+.color-sky-blue {
+    color: var(--color-sky-blue) !important;
+}
+
+.color-white {
+    color: var(--color-white) !important;
+}
+
+.color-red {
+    color: var(--light-red) !important;
+}
+
+.color-cyan {
+    color: var(--color-cyan) !important;
+}
+
+.color-navy-blue {
+    color: var(--color-navy-blue) !important;
+}
+
+.color-chocolate {
+    color: var(--color-chocolate) !important;
+}
+
+.color-gradient {
+    color: rgb(211, 16, 39);
+    background: -webkit-linear-gradient( 0deg, rgb(211, 16, 39) 0%, rgb(125, 0, 254) 0%, rgb(213, 43, 255) 100%);
+    /*background: -ms-linear-gradient( 0deg, rgb(211,16,39) 0%, rgb(125,0,254) 0%, rgb(213,43,255) 100%);*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* background color list */
+
+.bg-color-red {
+    background-color: var(--light-red) !important;
+}
+
+.bg-color-pink {
+    background-color: var(--color-pink) !important;
+}
+
+.bg-color-pink-2 {
+    background-color: var(--color-pink-2) !important;
+}
+
+.bg-color-sky-blue {
+    background-color: var(--color-sky-blue) !important;
+}
+
+.bg-color-purple {
+    background-color: var(--color-purple) !important;
+}
+
+.bg-color-black {
+    background-color: var(--color-semi-black) !important;
+}
+
+.bg-color-white {
+    background-color: var(--color-white) !important;
+}
+
+.bg-color-cyan {
+    background-color: var(--color-cyan) !important;
+}
+
+.bg-navy-blue {
+    background-color: var(--color-navy-blue) !important;
+}
+
+.bg-chocolate {
+    background-color: var(--color-chocolate) !important;
+}
+
+.bg-dark-green {
+    background-color: #249788 !important;
+}
+
+.bg-color-green {
+    background-color: #4CA14B !important;
+}
+
+.bg-color-gray {
+    background-color: #eef2f5 !important;
+}
+
+.bg-color-gray-2 {
+    background-color: #F9F9F9;
+}
+
+.bg-green-2 {
+    background-color: #8FC351 !important;
+}
+
+/*======================= beautypress overlay list ==========================*/
+
+.kolkatacity-pink-overlay:before {
+    background-image: -webkit-linear-gradient( 90deg, rgb(125, 0, 254) 0%, rgb(236, 85, 152) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(125, 0, 254) 0%, rgb(236, 85, 152) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+/* prelaoder */
+
+.spinner-eff {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.spinner-eff.spinner-eff-3 .circle {
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.spinner-eff.spinner-eff-3 .circle-1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-animation: pulse 1.6s linear 0s infinite;
+    animation: pulse 1.6s linear 0s infinite;
+}
+
+.spinner-eff.spinner-eff-3 .circle-2 {
+    width: 66.6%;
+    height: 66.6%;
+    top: 16.5%;
+    -webkit-animation: pulse-2 1.6s linear 0s infinite;
+    animation: pulse-2 1.6s linear 0s infinite;
+}
+
+.spinner-eff.spinner-eff-3 .circle-3 {
+    width: 33.3%;
+    height: 33.3%;
+    top: 33.3%;
+}
+
+.spinner-eff.spinner-eff-3 .circle-1,
+.spinner-eff.spinner-eff-3 .circle-2,
+.spinner-eff.spinner-eff-3 .circle-3 {
+    background-color: var(--color-white);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999999;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.spinner-block {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.preloader-window {
+    position: absolute;
+    background-color: var(--color-purple);
+    height: 100%;
+    top: 0;
+    -webkit-transition: all 1.8s ease;
+    transition: all 1.8s ease;
+}
+
+.left-window {
+    width: 51%;
+    left: 0;
+}
+
+.right-window {
+    width: 51%;
+    right: 0;
+}
+
+.loaded .left-window {
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+}
+
+.loaded .right-window {
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+}
+
+.loaded .spinner-block {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.loaded#preloader {
+    visibility: hidden;
+    /*opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@-webkit-keyframes pulse-2 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes pulse-2 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.preloader-content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.preloader-content h2 {
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.preloader-content img {
+    margin: 0 0 20px;
+}
+
+.loaded .preloader-content {
+    top: -50%;
+}
+
+/*======================================================================================
+								1. INDEX-V1 Header section
+===============================================================================*/
+/*
+.kolkatacity-header-section {
+    position: relative;
+    z-index: 9999;
+    box-shadow: var(--primary-shadow);
+    transition: all .4s ease;
+    top: 0;
+}
+
+.kolkatacity-logo-wraper {
+    position: relative;
+}
+
+.kolkatacity-logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    box-shadow: var(--hover-shadow);
+    padding: 30px 15px;
+    z-index: 9;
+    text-align: center;
+}
+
+.kolkatacity-header-section.kolkatacity-version-1 .kolkatacity-logo {
+    min-height: 187px;
+    min-height: 170px;
+    min-width: 197px;
+    max-width: 250px;
+    max-height: 220px;
+}
+
+.kolkatacity-logo a {
+    display: block;
+}
+
+.beautypress-header-top {
+    text-align: right;
+    color: var(--color-white);
+}
+
+.kolkatacity-simple-iocn-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-1 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.kolkatacity-simple-iocn-list li {
+    margin: 0 30px 0 0;
+}
+
+.beautypress-header-top.bg-color-gray-2 .kolkatacity-simple-iocn-list li {
+    color: #444444;
+}
+
+.beautypress-header-top .kolkatacity-version-2 .kolkatacity-simple-iocn-list li {
+    font-size: 0.857em;
+}
+
+.beautypress-header-top .kolkatacity-version-2 .kolkatacity-simple-iocn-list li i {
+    font-size: 1.333em;
+    top: 2px;
+    position: relative;
+}
+
+.beautypress-header-top .kolkatacity-version-2 .beautypress-language-select-list select {
+    background: url(../img/globe.png) no-repeat center left;
+    color: #444444;
+    font-size: 0.857em;
+    padding: 2px 22px;
+}
+
+.beautypress-header-top .kolkatacity-version-2 .beautypress-language-select-list select option {
+    background-color: #F9F9F9;
+}
+
+.kolkatacity-simple-iocn-list li i {
+    padding: 0 8px 0 0;
+}
+
+.kolkatacity-simple-iocn-list li:last-child {
+    margin: 0;
+}
+
+.kolkatacity-main-header {
+    background-color: var(--color-white);
+}
+
+.kolkatacity-main-header {
+    position: relative;
+    min-height: 50px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.kolkatacity-header-section.kolkatacity-version-1.kolkatacity-extra-css .kolkatacity-main-header {
+    background-color: transparent;
+}
+
+.kolkatacity-header-section.kolkatacity-version-1.kolkatacity-extra-css .beautypress-header-top {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.kolkatacity-main-header nav {
+    margin: 0;
+    width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.kolkatacity-main-header nav {
+    background-color: transparent;
+}
+
+.kolkatacity-main-header nav li {
+    /*margin: 0 30px 0 0;*/
+    float: none;
+    display: inline-block;
+}
+
+/*.kolkatacity-main-header nav li:last-child{
+		margin: 0;
+}*/
+
+.kolkatacity-main-header nav li a {
+    padding: 40px 0;
+    display: block;
+    text-transform: uppercase;
+    color: var(--color-semi-black);
+    font-weight: 600;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    height: auto;
+    font-size: 12px;
+}
+
+.kolkatacity-main-header nav li a {
+    padding: 30px 13.5px;
+    /*padding-right: 27px;*/
+}
+
+.kolkatacity-extra-css .kolkatacity-main-header nav li:last-child a {
+    padding-right: 0px;
+}
+
+.kolkatacity-main-header.color-white .xs_nav-landscape li .nav-submenu a:hover {
+    color: #560F86;
+}
+
+.kolkatacity-extra-css .kolkatacity-main-header .xs_nav-landscape .nav-submenu.megamenu-panel a {
+    padding: 0 0;
+}
+
+.kolkatacity-extra-css.kolkatacity-header-section.kolkatacity-version-1 .kolkatacity-version-2.kolkatacity-logo {
+    min-height: 117px;
+}
+
+.kolkatacity-extra-css.kolkatacity-header-section.kolkatacity-version-1 .kolkatacity-version-2.kolkatacity-logo:after {
+    border-left: 99.5px solid transparent;
+    border-right: 99.5px solid transparent;
+}
+
+.kolkatacity-main-header nav li a:hover,
+.kolkatacity-main-header nav li a:focus {
+    color: var(--color-purple);
+}
+
+.kolkatacity-main-header nav li a:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: var(--color-purple);
+    height: 4px;
+    width: 0%;
+}
+
+.kolkatacity-main-header nav li a:hover:before {
+    width: calc(100%);
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li {
+    display: block;
+}
+
+.kolkatacity-main-header .nav-submenu li a {
+    padding: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li.megamenu-list-title a {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--color-semi-black);
+}
+
+.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-landscape .nav-menu li.megamenu-list-title a:hover {
+    color: white;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li.megamenu-list-title a:before,
+.kolkatacity-main-header .megamenu-panel .megamenu-list li a:before {
+    display: none;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li.megamenu-list-title a:hover {
+    color: #70798b;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li {
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li:last-child {
+    padding: 0;
+}
+
+.kolkatacity-main-header .megamenu-panel {
+    padding: 0;
+}
+
+.kolkatacity-main-header .xs_nav-landscape .megamenu-list {
+    padding: 40px 20px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    border: 0px;
+}
+
+.kolkatacity-main-header .xs_nav-landscape .megamenu-list:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-right: solid 1px #f0f0f0;
+    z-index: -2;
+}
+
+.kolkatacity-main-header .megamenu-panel .megamenu-list li a:hover,
+.kolkatacity-main-header .megamenu-panel .megamenu-list li a:focus {
+    background-color: transparent;
+}
+
+.kolkatacity-main-header .nav-dropdown.nav-submenu li {
+    display: block;
+    /*position: relative;*/
+}
+
+.kolkatacity-main-header .nav-dropdown.nav-submenu li a {
+    padding: 15px 25px;
+    background-color: transparent;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.kolkatacity-main-header .nav-dropdown.nav-submenu li:last-child a {
+    border-bottom: 0;
+}
+
+.kolkatacity-main-header .nav-dropdown.nav-submenu li a:hover:before {
+    width: calc(100% - 20px);
+}
+
+.kolkatacity-main-header .nav-dropdown {
+    min-width: 200px;
+}
+
+.kolkatacity-main-header .xs_nav-portrait .submenu-indicator {
+    width: 40px;
+    height: 100%;
+    margin: 0;
+}
+
+.kolkatacity-main-header .nav-dropdown.nav-submenu li a:before {
+    display: none;
+}
+
+.kolkatacity-mega-menu .nav-submenu,
+.xs-navigation-middle-menu .nav-submenu,
+.xs_nav_2 .nav-submenu {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.16);
+    border: 0;
+}
+
+.nav-menu>li>.nav-dropdown {
+    border: 0;
+}
+
+.xs_nav_2 .nav-submenu li a {
+    background-color: transparent;
+}
+
+.xs_nav_2 .nav-submenu {
+    background-color: #FFFFFF;
+}
+
+.xs_nav-portrait .nav-submenu {
+    box-shadow: none;
+}
+
+.kolkatacity-main-header .kolkatacity-nav.xs_nav-portrait,
+.kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-portrait,
+.kolkatacity-main-header .kolkatacity-mega-menu.xs_nav-portrait {
+    height: 60px;
+}
+
+.nav-toggle {
+    margin: 0;
+}
+
+.kolkatacity-mega-menu .nav-dropdown,
+.xs-navigation-middle-menu .nav-dropdown {
+    background-color: var(--color-white);
+}
+
+.mega-menu-overlay-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/mega_menu_bg.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    -webkit-background-size: cover;
+    background-size: contain;
+    border-radius: 0 0 5px 0;
+    pointer-events: none;
+}
+
+.xs_nav-portrait .mega-menu-overlay-img {
+    z-index: -1;
+}
+
+.kolkatacity-mega-menu.xs_nav-landscape .mega-menu-overlay-img {
+    z-index: -1;
+}
+
+.xs_nav-portrait .submenu-indicator-chevron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.kolkatacity-mega-menu.xs_nav-landscape .submenu-indicator {
+    margin-top: 3px;
+}
+
+.submenu-indicator {
+    margin-top: 3px;
+}*/
+
+/*======================================================================================
+								2. INDEX-V1 welcome section
+===============================================================================*/
+
+.kolkatacity-welcome-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.content-right .kolkatacity-welcome-container {
+    margin: 0 0 0 auto !important;
+    text-align: left !important;
+}
+
+.content-center .kolkatacity-welcome-container {
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.content-left .kolkatacity-welcome-container {
+    margin: 0 auto 0 0 !important;
+    text-align: left !important;
+}
+
+.kolkatacity-welcome-container h1 {
+    font-family: var(--font-cursive);
+    font-size: 3.571em;
+    margin: 0 0 4px;
+}
+
+.kolkatacity-welcome-container h3 {
+    margin: 0 0 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 5.000em;
+}
+
+.kolkatacity-welcome-container p {
+    margin: 0 0 40px;
+    font-size: 1.429em;
+}
+
+/*.kolkatacity-welcome-section.kolkatacity-welcome-section-v1 .kolkatacity-welcome-wraper {
+		margin: 26% 0 0 0;
+}*/
+
+.kolkatacity-welcome-slider-wraper {
+    position: relative;
+}
+
+.kolkatacity-welcome-slider-wraper .customNavigation .welcome-prev,
+.kolkatacity-welcome-slider .owl-nav .owl-prev {
+    left: 20px;
+}
+
+.kolkatacity-welcome-slider-wraper .customNavigation .welcome-next,
+.kolkatacity-welcome-slider .owl-nav .owl-next {
+    right: 20px;
+}
+
+.kolkatacity-welcome-slider .owl-nav i {
+    font-size: 3em;
+    color: var(--color-purple);
+    transition: all .4s ease;
+}
+
+.kolkatacity-welcome-slider .owl-nav i:hover {
+    color: var(--color-pink);
+}
+
+.kolkatacity-welcome-slider-wraper .owl-dots .owl-dot span {
+    border: 2px solid var(--color-purple);
+    background-color: transparent;
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    margin: 0 10px 0 0;
+}
+
+.kolkatacity-welcome-slider-wraper .owl-dots .owl-dot:last-child span {
+    margin: 0;
+}
+
+.kolkatacity-welcome-slider-wraper .owl-dots .owl-dot.active span {
+    background-color: var(--color-purple);
+}
+
+.kolkatacity-welcome-slider-wraper .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 51px;
+}
+
+.kolkatacity-welcome-content-group {
+    position: relative;
+}
+
+.kolkatacity-welcome-slider .active .kolkatacity-welcome-wraper h1 {
+    -webkit-animation: fadeInLeftPix 1s ease 100ms both;
+    animation: fadeInLeftPix 1s ease 100ms both;
+}
+
+.kolkatacity-welcome-slider .active .kolkatacity-welcome-wraper h3 {
+    -webkit-animation: fadeInLeftPix 1s ease 200ms both;
+    animation: fadeInLeftPix 1s ease 200ms both;
+}
+
+.kolkatacity-welcome-slider .active .kolkatacity-welcome-wraper p {
+    -webkit-animation: fadeInLeftPix 1s ease 300ms both;
+    animation: fadeInLeftPix 1s ease 300ms both;
+}
+
+.kolkatacity-welcome-slider .active .kolkatacity-welcome-wraper .kolkatacity-btn-wraper a:first-child {
+    -webkit-animation: fadeInLeftPix 1s ease 400ms both;
+    animation: fadeInLeftPix 1s ease 400ms both;
+}
+
+.kolkatacity-welcome-slider .active .kolkatacity-welcome-wraper .kolkatacity-btn-wraper a:last-child {
+    -webkit-animation: fadeInRightPix 1s ease 500ms both;
+    animation: fadeInRightPix 1s ease 500ms both;
+}
+
+@-webkit-keyframes fadeInRightPix {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(50px, 0, 0);
+        transform: translate3d(50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRightPix {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(50px, 0, 0);
+        transform: translate3d(50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeInLeftPix {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(-50px, 0, 0);
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeftPix {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(-50px, 0, 0);
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/*======================================================================================
+								3. INDEX-V1 about section
+===============================================================================*/
+
+.beautypress-border-with-text-wrap {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 90px 0 90px 70px;
+    position: relative;
+}
+
+.beautypress-border-with-text-wrap .beautypress-border.kolkatacity-version-1 {
+    box-shadow: var(--hover-shadow);
+}
+
+.beautypress-border-with-text {
+    position: relative;
+    z-index: 2;
+}
+
+.beautypress-border-with-text h2 {
+    margin: 0;
+    color: var(--color-semi-black);
+    font-size: 3.571em;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.beautypress-border-with-text h2 span {
+    color: var(--color-purple);
+    font-weight: 300;
+}
+
+.beautypress-border-with-text h2 strong {
+    font-weight: 500;
+}
+
+.beautypress-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: 10px solid var(--color-semi-black);
+    z-index: 1;
+}
+
+.beautypress-border.kolkatacity-version-1 {
+    border-color: #EBEBEB;
+    width: calc(100% - 136px);
+}
+
+.beautypress-simple-img-wraper {
+    position: relative;
+}
+
+/* new about section */
+
+.kolkatacity-new-about-text-gruop {
+  /*  height: 100%; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+
+
+.kolkatacity-new-about-text-gruop .kolkatacity-sub-heading.kolkatacity-watermark-title h2:before {
+    color: #F0F0F0;
+    font-size: 2.419em;
+    z-index: -1;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    left: -55px;
+    top: 30px;
+    display: none;
+}
+
+.kolkatacity-gradient-separetor {
+    display: block;
+    height: 2px;
+    width: 130px;
+    background-image: -webkit-linear-gradient( 175deg, rgba(236, 85, 152, 0) 0%, rgba(236, 85, 152, 0.26) 24%, rgba(236, 85, 152, 0.5) 46%, rgb(236, 85, 152) 100%);
+    background-image: -ms-linear-gradient( 175deg, rgba(236, 85, 152, 0) 0%, rgba(236, 85, 152, 0.26) 24%, rgba(236, 85, 152, 0.5) 46%, rgb(236, 85, 152) 100%);
+}
+
+
+
+.kolkatacity-new-about-img-wraper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.kolkatacity-new-single-about-img-group {
+    margin: 0 0 40px;
+}
+
+.kolkatacity-new-single-about-img-group:last-child {
+    margin: 0;
+}
+
+.kolkatacity-new-single-about-img img,
+.kolkatacity-new-single-about-img .kolkatacity-3d-project-card {
+    border-radius: 10px;
+}
+
+.kolkatacity-new-single-about-img img {
+    width: 100%;
+}
+
+.kolkatacity-new-single-about-img .kolkatacity-3d-project-card {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.kolkatacity-new-about-img-wraper {
+    position: relative;
+    z-index: 2;
+}
+
+.kolkatacity-new-about-img-wraper:before,
+.kolkatacity-new-about-img-wraper:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    z-index: -1;
+}
+
+/*.kolkatacity-new-about-img-wraper:before {*/
+/*    top: -17px;*/
+/*    left: -123px;*/
+/*    background-image: url(../img/new-about-style.png);*/
+/*    background-position: top left;*/
+/*}*/
+
+/*.kolkatacity-new-about-img-wraper:after {*/
+/*    background-image: url(../img/new-about-style-2.png);*/
+/*    right: -135px;*/
+/*    bottom: 0;*/
+/*    background-position: bottom right;*/
+/*    display: none;*/
+/*}*/
+
+/*======================================================================================
+								4. INDEX-V1 our secrets section
+===============================================================================*/
+
+
+
+.kolkatacity-simple-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+   
+}
+
+.beautypress-separetor-sub-heading {
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.beautypress-separetor-sub-heading:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background-color: #D6D6D6;
+}
+
+.beautypress-separetor-sub-heading.beautypress-no-separetor {
+    /* Index version 2 */
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.beautypress-separetor-sub-heading.beautypress-no-separetor:before {
+    /* Index version 2 */
+    display: none;
+}
+
+.beautypress-separetor-sub-heading h2 {
+    margin: 0;
+    color: var(--color-semi-black);
+    font-size: 2.857em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.kolkatacity-simple-text p {
+    margin: 0 0 30px;
+    line-height: 1.8;
+}
+
+.twentytwenty-horizontal .kolkatacity-before-after .twentytwenty-handle:before,
+.twentytwenty-horizontal .kolkatacity-before-after .twentytwenty-handle:after {
+    background: #681C98;
+    box-shadow: none;
+}
+
+.kolkatacity-before-after .twentytwenty-handle {
+    border-color: #681C98;
+    box-shadow: none;
+    background-color: #E75098;
+}
+
+.kolkatacity-before-after .twentytwenty-handle {
+    top: 80%;
+}
+
+.kolkatacity-before-after.twentytwenty-container img {
+    width: 100%;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 {
+    padding: 0 0px;
+}
+
+
+
+.kolkatacity-simple-text.kolkatacity-version-2 .kolkatacity-big-sub-heading h3 {
+    font-size: 2.857em;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 .kolkatacity-big-sub-heading {
+    margin: 0 0 15px;
+}
+
+
+
+.kolkatacity-simple-text-content {
+    margin: 0 0 30px;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 .kolkatacity-spilit-container {
+    display: flex;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 .kolkatacity-spilit-container .beautypress-icon-with-text {
+    flex: 1;
+}
+
+.beautypress-svg-ico {
+    height: 70px;
+    margin: 0 0 30px;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 .beautypress-svg-ico {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.beautypress-svg-ico img {
+    max-height: 100%;
+}
+
+.beautypress-icon-with-text h3 {
+    margin: 0 0 15px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.571em;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+}
+
+.beautypress-icon-with-text p {
+    margin: 0;
+    line-height: inherit;
+}
+
+/*======================================================================================
+								5. INDEX-V1 vidoe popup section
+===============================================================================*/
+
+
+.simple-icon-btn {
+    color: var(--color-white);
+    font-size: 4em;
+}
+
+.simple-icon-btn:hover {
+    color: var(--color-purple);
+}
+
+.kolkatacity-video-side-text {
+    width: calc(100% - 20px);
+    margin: 0 auto 0 0;
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.kolkatacity-big-sub-heading {
+    margin: 0 0 40px;
+}
+
+
+
+.kolkatacity-video-side-text .kolkatacity-simple-iocn-list.kolkatacity-version-2 {
+    margin: 0 0 40px;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 11px 0 0;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul li {
+    margin: 0;
+    color: var(--color-pink);
+    padding: 0 11px 0 0;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul li i {
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #DEDEDE;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0 12px 0 0;
+}
+
+.beautypress-video-popup-content-inner.xs-video-border-none {
+    margin: 0px;
+}
+
+.beautypress-video-popup-content-inner.xs-video-border-none:before {
+    display: none;
+}
+
+.beautypress-video-popup-content-inner.video-popup-nomargin {
+    margin: 0px;
+}
+
+/*======================================================================================
+								6. Get Appoinment
+===============================================================================*/
+
+
+
+.datepicker td,
+.datepicker th {
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+}
+
+.datepicker {
+    padding: 15px;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover:active {
+    background-image: none;
+    background-color: var(--color-purple) !important;
+}
+
+.datepicker table tr td.active:hover {
+    background-color: var(--color-pink) !important;
+    background-image: none !important;
+}
+
+.beautypress-booking-form-wraper input[type="number"]::-webkit-inner-spin-button,
+.beautypress-booking-form-wraper input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*======================================================================================
+								6. INDEX-V1 Photo Gallery
+===============================================================================*/
+
+.kolkatacity-portfolio-nav {
+    text-align: center;
+}
+
+.kolkatacity-portfolio-nav ul#filters {
+    margin: 0;
+    padding: 0 0 47px;
+}
+
+.kolkatacity-portfolio-nav ul#filters li {
+    margin: 0 29px 0 0;
+}
+
+.kolkatacity-portfolio-nav ul#filters li:last-child {
+    margin: 0;
+}
+
+.kolkatacity-portfolio-nav ul li a {
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: 700;
+    font-size: 0.857em;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-portfolio-nav ul li a:hover,
+.kolkatacity-portfolio-nav ul li a.selected {
+    color: var(--color-pink);
+}
+
+.kolkatacity-portfolio-nav ul li a:before {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 50%;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-pink);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.kolkatacity-portfolio-nav ul li a:hover:before,
+.kolkatacity-portfolio-nav ul li a.selected:before {
+    width: calc(100% + 30px);
+}
+
+.kolkatacity-portfolio-nav.kolkatacity-version-2 ul#filters li {
+    margin: 0;
+}
+
+.kolkatacity-portfolio-nav.kolkatacity-version-2 ul#filters li a {
+    color: #BDBDBD;
+    padding: 13px 22px;
+}
+
+.kolkatacity-portfolio-nav.kolkatacity-version-2 ul li a:before {
+    display: none;
+}
+
+.kolkatacity-portfolio-nav.kolkatacity-version-2 ul#filters li a:hover,
+.kolkatacity-portfolio-nav.kolkatacity-version-2 ul#filters li a.selected {
+    background-color: #58B7AC;
+    color: var(--color-white);
+    border-radius: 40px;
+}
+
+.kolkatacity-photo-gallery-grid-item {
+    padding: 15px;
+}
+
+.kolkatacity-single-photo-gallery {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-single-photo-gallery.kolkatacity-3d {
+    overflow: visible;
+}
+
+.kolkatacity-single-photo-gallery img {
+    width: 100%;
+}
+
+.kolkatacity-photo-gallery-content {
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 50%;
+    -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
+    transform: translateZ(50px) translateY(-50%) translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.kolkatacity-single-photo-gallery.kolkatacity-3d .kolkatacity-3d-project-card {
+    box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+}
+
+.kolkatacity-single-photo-gallery.kolkatacity-3d .kolkatacity-iocn-btn.full-round-btn {
+    box-shadow: 0 0 50px 0 rgba(51, 51, 51, 0.3);
+}
+
+.kolkatacity-photo-gallery-content a {
+    margin: 0 20px 0 0;
+}
+
+.kolkatacity-photo-gallery-content a:last-child {
+    margin: 0;
+}
+
+.kolkatacity-iocn-btn.full-round-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: var(--primary-shadow);
+    color: var(--color-white);
+    font-size: 1.143em;
+    background-color: var(--color-semi-black);
+    position: relative;
+    transition: all .9s ease;
+}
+
+.kolkatacity-iocn-btn.full-round-btn.bg-color-pink {
+    background-color: var(--color-pink);
+}
+
+.kolkatacity-iocn-btn.full-round-btn.bg-color-purple {
+    background-color: var(--color-purple);
+}
+
+.kolkatacity-gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: #000;
+    -webkit-transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.kolkatacity-single-photo-gallery:hover .kolkatacity-gallery-overlay {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.kolkatacity-single-photo-gallery:hover .kolkatacity-photo-gallery-content {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 50%;
+}
+
+.kolkatacity-3d-project-card {
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.beautypress-photo-gallery-grid-item-v3 {
+    padding: 15px;
+}
+
+/*======================================================================================
+								7. INDEX-V1 Pricing Plan
+===============================================================================*/
+
+.kolkatacity-single-pricing-table {
+    box-shadow: var(--primary-shadow);
+    background-color: var(--color-white);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-pricing-table-section {
+    position: relative;
+    
+    background-image: linear-gradient( to left, rgb(0, 0, 0) 5.6%, rgb(147, 3, 3) 97.7% );
+    padding: 0px 0px 50px;
+}
+
+.kolkatacity-pricing-table-section .beautypress-black-overlay {
+    background-color: #FFFFFF;
+    opacity: .5;
+}
+
+.kolkatacity-pricing-table-section .kolkatacity-section-headinig.kolkatacity-section-headinig-white h3 {
+    color: var(--color-semi-black);
+}
+
+.kolkatacity-pricing-header {
+    position: relative;
+}
+
+.kolkatacity-pricing-header img {
+    width: 100%;
+    height: 320px;
+}
+
+.kolkatacity-pricing-header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color-white);
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.kolkatacity-pricing-title,
+.kolkatacity-pricing-price {
+    flex: 1;
+}
+
+.kolkatacity-pricing-title h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.143em;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-pricing-price {
+    text-align: right;
+}
+
+.kolkatacity-pricing-price h4 {
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.kolkatacity-pricing-price h5 {
+    margin: 0;
+    font-size: 2.857em;
+    font-weight: 200;
+}
+
+.kolkatacity-pricing-price h5 span {
+    font-size: 0.600em;
+    vertical-align: super;
+}
+
+.kolkatacity-pricing-footer {
+    padding: 40px 30px;
+}
+
+.kolkatacity-both-side-list li {
+    display: flex;
+    font-size: 1.143em;
+    margin: 0 0 16px;
+    flex: 1;
+}
+
+.kolkatacity-both-side-list li:last-child {
+    margin: 0;
+}
+
+.kolkatacity-both-side-list li span {
+    text-align: right;
+    color: #444444;
+    flex: 1;
+}
+
+.kolkatacity-pricing-footer .kolkatacity-both-side-list {
+    margin: 0 0 42px;
+}
+
+.kolkatacity-pricing-footer .kolkatacity-btn-wraper {
+    text-align: center;
+}
+
+.kolkatacity-single-pricing-table:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+/*======================================================================================
+								8. Pricing Plan
+===============================================================================*/
+
+.kolkatacity-tab .kolkatacity-top-nav {
+    border: 0;
+    padding: 0 0 50px;
+    display: flex;
+}
+
+.kolkatacity-tab .nav.nav-tabs.kolkatacity-top-nav li {
+    flex: 1;
+    margin: 0 30px 0 0;
+}
+
+.kolkatacity-tab .nav.nav-tabs.kolkatacity-top-nav li:last-child {
+    margin: 0;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li,
+.kolkatacity-tab .kolkatacity-top-nav li a {
+    min-height: 150px;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    background-color: #F5f5f5;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li.active a,
+.kolkatacity-tab .kolkatacity-top-nav li a:hover {
+    box-shadow: var(--hover-shadow);
+    background-color: var(--color-white);
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a i {
+    margin: 0 0 20px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    color: var(--color-purple);
+    font-size: 2.857em;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a:hover i,
+.kolkatacity-tab .kolkatacity-top-nav li.active a i {
+    color: var(--color-pink);
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a:before,
+.kolkatacity-tab .kolkatacity-top-nav li a:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--color-pink);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a:before {
+    top: 0;
+    left: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a:after {
+    bottom: 0;
+    right: 0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li.active a:before,
+.kolkatacity-tab .kolkatacity-top-nav li.active a:after,
+.kolkatacity-tab .kolkatacity-top-nav li a:hover:before,
+.kolkatacity-tab .kolkatacity-top-nav li a:hover:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li a span {
+    color: #999999;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-tab .kolkatacity-top-nav li.active a span,
+.kolkatacity-tab .kolkatacity-top-nav li a:hover span {
+    color: #666666;
+}
+
+.kolkatacity-tab .tab-content .tab-pane .tabbable {
+    display: flex;
+    width: 100%;
+}
+
+.kolkatacity-tab .tab-pane .tabbable .tab-content {
+    width: calc(75% - 15px);
+}
+
+.kolkatacity-tab .kolkatacity-side-nav {
+    padding: 0px 20px 0px 0;
+    box-shadow: var(--hover-shadow);
+    background-color: var(--color-white);
+    border: 0;
+    display: block;
+    width: calc(28% - 26px);
+    margin: 0 30px 0 0;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li {
+    display: block;
+    width: 100%;
+    margin: 16px 0 0 30px;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li:last-child {
+    border-bottom: 0;
+    margin: 16px 0 0 30px;
+    padding: 0;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li:last-child a {
+    padding: 0;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li:last-child a:after {
+    display: none;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li a {
+    display: block;
+    width: 100%;
+    color: var(--color-semi-ash);
+    text-transform: capitalize;
+    font-size: 1.143em;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 0 0 16px;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li a:hover,
+.kolkatacity-tab .kolkatacity-side-nav li.active a {
+    color: var(--color-pink);
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li a:before {
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: 50%;
+    height: 0;
+    width: 4px;
+    background-color: var(--color-pink);
+    -webkit-transform: translateY(-60%);
+    transform: translateY(-60%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px dashed #C3C3C3;
+    width: calc(100% - 40px);
+}
+
+.kolkatacity-tab .kolkatacity-side-nav li a:hover:before,
+.kolkatacity-tab .kolkatacity-side-nav li.active a:before {
+    height: calc(100% + 10px);
+}
+
+.kolkatacity-tab .kolkatacity-spilit-container {
+/*    padding: 30px 0px 0px;*/
+    display: flex;
+    height: 90%;
+}
+
+.kolkatacity-tab-text-content {
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: 0 47px 0 0;
+    width: calc(55.56666% - 15px);
+}
+
+.kolkatacity-tab .kolkatacity-tab-content {
+    background-color: var(--color-white);
+    box-shadow: var(--hover-shadow);
+    height: 100%;
+}
+
+.kolkatacity-tab .kolkatacity-tab-image {
+    position: relative;
+    width: calc(44.444444% - 15px);
+    margin: 0 30px 0 0;
+}
+
+.kolkatacity-tab .kolkatacity-tab-image-content {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.kolkatacity-tab .kolkatacity-tab-image img {
+    width: 100%;
+}
+
+.kolkatacity-tab .kolkatacity-tab-text-content h3 {
+    margin: 0 0 10px;
+    color: #444444;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: inherit;
+
+}
+
+.kolkatacity-tab .kolkatacity-tab-text-content p {
+    margin: 0 0 20px;
+    color: #999999;
+    text-align: justify;
+}
+
+/*======================================================================================
+								8. INDEX-V1 Call To Action
+===============================================================================*/
+
+.kolkatacity-call-to-action-content {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.kolkatacity-content-headinig h2 {
+    margin: 0 0 20px;
+    font-family: var(--font-cursive);
+    color: var(--color-purple);
+    font-size: 3.571em;
+}
+
+.kolkatacity-content-headinig h3 {
+    margin: 0;
+    color: var(--color-semi-black);
+    /*font-weight: 500;*/
+    font-weight: 600;
+    font-size: 3.571em;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-content-headinig {
+    margin: 0 0 30px;
+}
+
+/*======================================================================================
+								9. INDEX-V1 Expert Beauticians
+===============================================================================*/
+
+
+/*======================================================================================
+								10. INDEX-V1 News Feeds
+===============================================================================*/
+
+/*======================================================================================
+								11. INDEX-V1 Our Partners
+===============================================================================*/
+
+.kolkatacity-sub-heading h2 {
+    font-family: var(--font-cursive);
+    margin: 0;
+    color: var(--color-semi-black);
+    font-weight: 500;
+    font-size: 2.857em;
+    position: relative;
+    z-index: 1;
+}
+
+.kolkatacity-sub-heading.kolkatacity-watermark-title h2:before {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    opacity: .1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #B2B2B2;
+    font-weight: 700;
+    font-size: 1.750em;
+    letter-spacing: -2px;
+}
+
+/*======================================================================================
+								12. INDEX-V1 Footer Section
+===============================================================================*/
+
+
+/*==============================-------------------------------------
+												index-v2.html
+=========================----------------------------------*/
+
+/*=============== section heading ==========================*/
+
+.kolkatacity-watermark-title.kolkatacity-section-headinig i {
+    color: var(--color-purple);
+    font-size: 4em;
+    margin: 0 0 27px;
+    display: block;
+}
+
+.kolkatacity-watermark-title.kolkatacity-section-headinig h2 {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 2.857em;
+    text-transform: capitalize;
+    z-index: 1;
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.kolkatacity-section-headinig.kolkatacity-watermark-title h2:before {
+    font-size: 1.750em;
+    font-weight: 700;
+    left: 50%;
+    top: -25px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    color: #F6F6F6;
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: -1;
+    letter-spacing: -2px;
+}
+
+.bg-color-gray .kolkatacity-section-headinig.kolkatacity-watermark-title h2:before {
+    color: #eaeaea;
+}
+
+/*======================================================================================
+								1. INDEX-V2 Header section
+===============================================================================*/
+/*
+.beautypress-header-social-list ul li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.beautypress-header-social-list ul li:last-child {
+    margin-right: 0;
+}
+
+.beautypress-header-social-list ul li a {
+    color: #666666;
+}
+
+.kolkatacity-header-section.beautypress-header-version-3.beautypress-header-version-4 {
+    box-shadow: var(--primary-shadow);
+}
+
+.kolkatacity-header-section.beautypress-header-version-2 .beautypress-header-top .kolkatacity-spilit-container,
+.kolkatacity-header-section.beautypress-header-version-3 .beautypress-header-top .kolkatacity-spilit-container {
+    /* index-v4.html and index-v3.html */
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.kolkatacity-header-section.beautypress-header-version-2 .beautypress-header-top .kolkatacity-simple-iocn-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.kolkatacity-header-section.beautypress-header-version-2 .beautypress-language-select-list,
+.kolkatacity-header-section.beautypress-header-version-3 .beautypress-language-select-list {
+    /* index-v4.html and index-v3.html */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.beautypress-language-select-list select {
+    background-color: transparent;
+    border: 0;
+    color: var(--color-white);
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select-icons.png) no-repeat center right;
+    padding: 0 22px;
+}
+
+.beautypress-language-select-list select option {
+    background-color: var(--color-pink);
+    border: 0;
+}
+
+.bg-color-green .beautypress-language-select-list select option {
+    background-color: #53A14E;
+}
+
+.bg-color-purple .beautypress-language-select-list select option {
+    background-color: var(--color-purple);
+}
+
+.bg-color-cyan .beautypress-language-select-list select option {
+    background-color: var(--color-cyan);
+}
+
+.bg-green-2 .beautypress-language-select-list select option {
+    background-color: #92C357;
+}
+
+.kolkatacity-header-section.beautypress-header-version-2 .kolkatacity-logo-wraper .kolkatacity-logo {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.nav-side-logo {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.beautypress-nav-logo {
+    display: block;
+}
+
+.kolkatacity-version-2.kolkatacity-logo:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 191px;
+    z-index: -1;
+    top: 0;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 200 191"> <path fill-rule="evenodd"  fill="%23FFFFFF" d="M200.002,-0.005 L200.002,127.338 L100.003,191.011 L0.004,127.338 L0.004,-0.005 "/></svg>');
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+}
+
+.kolkatacity-version-2.kolkatacity-logo:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 64px solid $color-white;
+    filter: drop-shadow(0px 8px 21px rgba(0, 0, 0, 0.1));
+    z-index: -2;
+    display: none;
+}
+
+.kolkatacity-logo.kolkatacity-version-2.kolkatacity-version-4:after {
+    border-left: 92.5px solid transparent;
+    border-right: 92.5px solid transparent;
+}
+
+.kolkatacity-version-2.kolkatacity-logo img {
+    padding: 17px 23px;
+    margin-top: 10px;
+}
+
+.kolkatacity-header-section.kolkatacity-version-1 .kolkatacity-version-2.kolkatacity-logo {
+    top: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    box-shadow: var(--hover-shadow);
+    max-width: 199px;
+    height: 100%;
+    min-height: 110px;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    max-height: none;
+    width: 100%;
+}
+*/
+/*======================================================================================
+								2. INDEX-V2 welcome section
+===============================================================================*/
+
+.kolkatacity-welcome-section.beautypress-welcome-version-2 .kolkatacity-welcome-container {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+    width: 58.666667%;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-2 .kolkatacity-welcome-wraper {
+    width: 100%;
+    min-height: 379px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 74px 74px 0;
+    position: relative;
+    margin: 25% 0 0 0;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-2 .kolkatacity-welcome-wraper:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: calc(100% - 35px);
+    width: 100%;
+    border: 2px solid var(--color-white);
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-2 .kolkatacity-welcome-slider h2 {
+    font-size: 4.286em;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-2 .kolkatacity-welcome-slider h3 {
+    font-size: 7.143em;
+    margin: 0 0 50px;
+    letter-spacing: -4px;
+}
+
+/*======================================================================================
+								3. INDEX-V2 Simple text with image version 2
+===============================================================================*/
+
+.beautypress-watermark-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.beautypress-watermark-icon:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-icons-2);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #f2f2f2;
+    font-size: 15em;
+}
+
+.kolkatacity-simple-text.beautypress-watermark-icon:before {
+    content: "\e946";
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+}
+
+/*======================================================================================
+								4. INDEX-V2 Exclusive Products
+===============================================================================*/
+
+.beautypress-product-group {
+    min-height: 356px;
+    box-shadow: var(--primary-shadow);
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 47px 10px 40px;
+    background-color: var(--color-white);
+}
+
+.beautypress-product-content .beautypress-rating {
+    margin: 0 0 20px;
+}
+
+.beautypress-rating li {
+    display: inline-block;
+}
+
+.beautypress-rating li a {
+    color: var(--color-orange);
+}
+
+.beautypress-product-details {
+    margin: 0 0 15px;
+}
+
+.beautypress-product-details h3 {
+    color: #111111;
+    margin: 0 0 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.286em;
+    line-height: inherit;
+}
+
+.beautypress-product-details h4 {
+    margin: 0;
+    color: #A0A0A0;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.beautypress-product-img {
+    min-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.beautypress-product-hover-elements {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    width: 100%;
+    text-align: center;
+}
+
+.beautypress-product-group:hover .beautypress-product-hover-elements {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 50%;
+}
+
+.beautypress-product-group:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.beautypress-product-hover-elements a {
+    margin: 0 20px 0 0;
+}
+
+.beautypress-product-hover-elements a:last-child {
+    margin: 0;
+}
+
+.pulse-btn i:before {
+    z-index: 2;
+}
+
+.pulse-btn i:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    font-family: 'FontAwesome';
+    z-index: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    pointer-events: none;
+}
+
+.beautypress-product-hover-elements .pulse-btn i:after {
+    content: "\f004";
+    color: var(--color-purple);
+}
+
+.pulse-btn.active i:after {
+    -webkit-animation: scale .6s linear;
+    animation: scale .6s linear;
+}
+
+@-webkit-keyframes scale {
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+@keyframes scale {
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+}
+
+/*======================================================================================
+								5. INDEX-V2 Welcome to our barbar shop
+===============================================================================*/
+
+.beautypress-shop-call-to-action-content {
+    position: relative;
+    width: 77%;
+    z-index: 2;
+    padding: 200px 0;
+}
+
+.beautypress-shop-call-to-action-content h2 {
+    font-weight: 100;
+    font-size: 4.286em;
+    margin: 0 0 58px;
+}
+
+.beautypress-shop-call-to-action-content h2 strong {
+    font-weight: 500;
+}
+
+.beautypress-shop-call-to-action-content .kolkatacity-spilit-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 130px;
+}
+
+.beautypress-shop-text p {
+    color: #666666;
+    font-size: 1.143em;
+    margin: 0 0 30px;
+}
+
+.beautypress-shop-shedule h3 {
+    font-size: 1.857em;
+    font-weight: 500;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+}
+
+.beautypress-shop-shedule span,
+.beautypress-shop-shedule i {
+    display: block;
+    color: #666666;
+    font-size: 0.700em;
+}
+
+.beautypress-shop-shedule p {
+    color: var(--color-purple);
+    margin: 0 0 15px;
+    font-size: 1.429em;
+}
+
+.beautypress-shop-shedule p:last-child {
+    margin: 0;
+}
+
+.beautypress-shop-shedule i {
+    color: var(--light-red);
+}
+
+.beautypress-watermark-big-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/scissors.png);
+    z-index: -1;
+    pointer-events: none;
+    background-size: 60% 70%;
+}
+
+/*======================================================================================
+								6. INDEX-V2 How It Works
+===============================================================================*/
+
+.counter-increment {
+    counter-increment: my-awesome-counter;
+}
+
+.beautypress-single-how-it-work {
+    padding: 0 30px;
+}
+
+.beautypress-neumaric-heading {
+    margin: 0 0 30px;
+}
+
+.kolkatacity-watermark-title .beautypress-neumaric-heading h2 {
+    z-index: 2;
+}
+
+.kolkatacity-watermark-title .beautypress-neumaric-heading h2:before {
+    color: var(--color-purple);
+    content: '0' counter(my-awesome-counter);
+    font-size: 3.846em;
+    font-weight: 700;
+    line-height: 1;
+    top: calc(50% - 11px);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -34px;
+    z-index: -1;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.beautypress-neumaric-heading h2 {
+    margin: 0;
+    font-size: 1.857em;
+    font-weight: 300;
+}
+
+.beautypress-neumaric-heading strong {
+    font-weight: 500;
+}
+
+.beautypress-single-how-it-work p {
+    margin: 0 0 25px;
+    line-height: 1.8;
+}
+
+/*======================================================================================
+								7. INDEX-V2 Video background section
+===============================================================================*/
+
+.beautypress-video-section {
+    padding: 260px 0;
+}
+
+.beautypress-video-section-content {
+    text-align: center;
+    color: var(--color-white);
+}
+
+.beautypress-video-section-content a {
+    margin: 0 0 50px;
+}
+
+.beautypress-video-section-content p {
+    font-family: var(--font-cursive);
+    font-size: 2.143em;
+    margin: 0 0 20px;
+}
+
+.beautypress-video-section-content h3 {
+    margin: 0;
+    font-size: 3.571em;
+    font-weight: 500;
+}
+
+/*======================================================================================
+								8. INDEX-V2 Our Services
+===============================================================================*/
+
+.beautypress-single-our-sevice {
+    box-shadow: var(--primary-shadow);
+}
+
+.beautypress-service-footer {
+    padding: 40px 30px 40px;
+}
+
+.beautypress-service-header img {
+    width: 100%;
+}
+
+.beautypress-service-footer h3 {
+    margin: 0 0 30px;
+    color: var(--color-semi-black);
+    font-weight: 500;
+    font-size: 1.857em;
+    text-transform: capitalize;
+}
+
+.kolkatacity-both-side-list.kolkatacity-version-2 li span {
+    color: var(--color-purple);
+}
+
+.kolkatacity-both-side-list.kolkatacity-version-2 li:hover,
+.kolkatacity-both-side-list.kolkatacity-version-2 li:hover span {
+    color: var(--light-red);
+}
+
+/*======================================================================================
+								9. INDEX-V2 Testimonial section
+===============================================================================*/
+
+.beautypress-testimonial-section {
+    padding: 173px 0;
+}
+
+.beautypress-testimonial-slider {
+    position: relative;
+    padding: 58px 0 0 0;
+}
+
+.beautypress-testimonial-slider:before {
+    position: absolute;
+    content: "";
+    top: 58px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 165px;
+    width: 225px;
+    background-image: url(../img/quote-icon.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.beautypress-black-overlay.light-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.beautypress-single-testimonial {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.beautypress-single-testimonial h2 {
+    margin: 0 0 32px;
+    color: var(--color-white);
+    font-weight: 100;
+    font-size: 2.857em;
+    text-transform: capitalize;
+}
+
+.beautypress-single-testimonial p {
+    color: #BBBBBB;
+    margin: 0 0 30px;
+    font-size: 1.143em;
+}
+
+.beautypress-single-testimonial .beautypress-rating {
+    margin: 0 0 19px;
+}
+
+.beautypress-testimonial-slider.owl-carousel .owl-item .beautypress-signature img {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.beautypress-testimonial-slider.owl-carousel .owl-dot {
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-white);
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    margin: 0 20px 0 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-testimonial-slider.owl-carousel .owl-dot:last-child {
+    margin: 0;
+}
+
+.beautypress-testimonial-slider.owl-carousel .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.beautypress-testimonial-slider.owl-carousel .owl-dot.active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*======================================================================================
+								10. INDEX-V2 Our Pricing
+===============================================================================*/
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 {
+    padding: 80px 30px 50px;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-header {
+    text-align: center;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-header-content {
+    position: static;
+    flex-direction: column;
+    padding: 0;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-price {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .beautypress-pricing-header i {
+    color: var(--color-white);
+    font-size: 6em;
+    margin: 0 0 50px;
+    display: block;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-footer {
+    padding: 0;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-title h2 {
+    font-size: 1.857em;
+    margin: 0 0 30px;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-price h5 {
+    font-weight: 100;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-pricing-price h5 span {
+    font-size: inherit;
+    vertical-align: unset;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-both-side-list li,
+.kolkatacity-single-pricing-table.kolkatacity-version-2 .kolkatacity-both-side-list li span {
+    color: var(--color-white);
+}
+
+/*======================================================================================
+								11. INDEX-V2 Our Partners
+===============================================================================*/
+
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(1):before {
+    background-image: -webkit-linear-gradient( 0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 25%, rgb(107, 30, 153) 100%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 25%, rgb(107, 30, 153) 100%, rgb(255, 255, 255) 100%);
+}
+
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(2):before {
+    border-color: var(--color-purple);
+}
+
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(1):after,
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(2):after {
+    background-image: -webkit-linear-gradient( 90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 0%, rgb(107, 30, 153) 75%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 0%, rgb(107, 30, 153) 75%, rgb(255, 255, 255) 100%);
+}
+
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(3):before {
+    background-image: -webkit-linear-gradient( 0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 0%, rgb(107, 30, 153) 25%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 0%, rgb(107, 30, 153) 25%, rgb(255, 255, 255) 100%);
+}
+
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(4):after,
+.beautypress-partner-list.kolkatacity-version-2 li:nth-child(5):after {
+    background-image: -webkit-linear-gradient( 90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 25%, rgb(107, 30, 153) 100%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(107, 30, 153) 25%, rgb(107, 30, 153) 100%, rgb(255, 255, 255) 100%);
+}
+
+/*======================================================================================
+								12. INDEX-V2 Subscribe Section
+===============================================================================*/
+
+.beautypress-subscribe-content {
+    padding: 0 0 70px;
+    margin: 0 0 80px;
+    border-bottom: 1px solid #E2E2E2;
+    position: relative;
+    z-index: 1;
+}
+
+.beautypress-subscribe-content:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/massage-watermark.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.beautypress-subscribe-wraper.kolkatacity-version-2 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.beautypress-subscribe-wraper.kolkatacity-version-2 h3 {
+    color: var(--color-semi-black);
+    font-size: 2.857em;
+    margin: 0 0 48px;
+}
+
+.kolkatacity-version-2.beautypress-subscribe-wraper input:not([type="submit"]) {
+    background-color: transparent;
+}
+
+.beautypress-subscribe-wraper.kolkatacity-version-2 .beautypress-subscribe label {
+    color: var(--color-purple);
+}
+
+/*======================================================================================
+								13. INDEX-V2 Footer Section
+===============================================================================*/
+
+.beautypress-footer-section.kolkatacity-version-2 .beautypress-single-footer p {
+    color: inherit;
+    font-size: 1em;
+}
+
+.kolkatacity-version-2.beautypress-footer-section:before,
+.kolkatacity-version-2.beautypress-footer-section:after {
+    display: none;
+}
+
+.kolkatacity-version-2.beautypress-footer-section {
+    padding: 0;
+    background-image: none;
+}
+
+.beautypress-footer-section.kolkatacity-version-2 .beautypress-footer-content {
+    padding: 0 0 100px;
+    border-bottom: 0px solid var(--color-white);
+    margin: 0;
+}
+
+.beautypress-footer-section.kolkatacity-version-2 .beautypress-copyright-content {
+    background-color: var(--color-purple);
+    padding: 25px 0;
+}
+
+.beautypress-footer-section.kolkatacity-version-2 .beautypress-copyright-text {
+    text-align: left;
+    padding: 0;
+}
+
+.beautypress-footer-section.kolkatacity-version-2 .beautypress-footer-social {
+    text-align: right;
+}
+
+/*==============================-------------------------------------
+												index-v3.html
+=========================----------------------------------*/
+
+/*====================== section heading ========================*/
+
+.kolkatacity-version-2.kolkatacity-section-headinig h2 {
+    color: var(--color-cyan);
+    font-size: 1.857em;
+}
+
+.kolkatacity-version-2.kolkatacity-section-headinig h3 {
+    margin: 0 0 18px;
+}
+
+/*======================================================================================
+								1. INDEX-V3 header section
+===============================================================================*/
+
+
+/*======================================================================================
+								2. INDEX-V3 welcome section
+===============================================================================*/
+
+
+/*======================================================================================
+								3. INDEX-V3 Our Services
+===============================================================================*/
+
+
+
+/*======================================================================================
+								4. INDEX-V3 Get Appoinment
+===============================================================================*/
+
+
+/*======================================================================================
+								4. INDEX-V3 Photo Gallery
+===============================================================================*/
+
+
+/*======================================================================================
+								5. INDEX-V3 Our Pricing
+===============================================================================*/
+
+.kolkatacity-single-pricing-table.beautypress-version-3 {
+    padding: 100px 30px 50px;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-header-content {
+    position: static;
+    padding: 0;
+    flex-direction: column;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .beautypress-pricing-header,
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-price {
+    text-align: center;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-title h2 {
+    color: var(--color-semi-black);
+    font-size: 1.857em;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-price h4 {
+    color: #C8C8C8;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-price h5 span {
+    vertical-align: unset;
+    font-size: inherit;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-footer {
+    padding: 0;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-header img {
+    margin: 0 0 30px;
+    width: auto;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-title {
+    margin: 0 0 20px;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-header {
+    padding: 0 0 37px;
+    z-index: 1;
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-pricing-header:before {
+    position: absolute;
+    content: "";
+    top: -53px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -1;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3.beautypress-image-overlay-1 .kolkatacity-pricing-header:before {
+    background-image: url(../img/pricing-overlay-1.png);
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3.beautypress-image-overlay-2 .kolkatacity-pricing-header:before {
+    background-image: url(../img/pricing-overlay-2.png);
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3.beautypress-image-overlay-3 .kolkatacity-pricing-header:before {
+    background-image: url(../img/pricing-overlay-3.png);
+}
+
+.kolkatacity-both-side-list.beautypress-version-3 li span {
+    color: var(--color-chocolate);
+}
+
+.kolkatacity-single-pricing-table.beautypress-version-3 .kolkatacity-both-side-list li {
+    color: #999;
+}
+
+/*======================================================================================
+								6. INDEX-V3 Call To Action
+===============================================================================*/
+
+.kolkatacity-call-to-action-content.kolkatacity-version-2 .kolkatacity-content-headinig h2 {
+    font-size: 2.857em;
+}
+
+.kolkatacity-call-to-action-content.kolkatacity-version-2 .kolkatacity-content-headinig h3 {
+    color: #444444;
+    font-size: 3.571em;
+    letter-spacing: -2px;
+}
+
+/*======================================================================================
+								7. INDEX-V3 Fun Factory
+===============================================================================*/
+
+.beautypress-fun-factory-section {
+    padding: 173px 0;
+}
+
+.beautypress-counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 0 13px;
+}
+
+.beautypress-single-fun-factory {
+    text-align: center;
+    color: var(--color-white);
+}
+
+.beautypress-counter h2,
+.beautypress-counter span {
+    margin: 0;
+    font-size: 4.286em;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.beautypress-single-fun-factory h5 {
+    margin: 0;
+    font-size: 1.857em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.beautypress-single-fun-factory {
+    position: relative;
+}
+
+.beautypress-watermark-icons.watermark-icon-style-1 {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    font-size: 12em;
+    line-height: 1;
+}
+
+/*======================================================================================
+								8. INDEX-V3 Footer
+===============================================================================*/
+
+.beautypress-version-3.beautypress-footer-section {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 829.4" preserveAspectRatio="none"><path fill="rgb(77, 182, 172)" fill-opacity="0.7" fill-rule= "evenodd" d="M0,10266s198.4,114,387,5,497.966-214.4,774-170,689.47,140,759,169v650H0v-654Z" transform="translate(0 -10090.6)"/></svg>');
+}
+
+.beautypress-version-3.beautypress-footer-section:after {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 829.4" preserveAspectRatio="none"><path fill="rgb(77, 182, 172)" fill-opacity="0.7" fill-rule= "evenodd" d="M0,10095s570.853,396,1495,58c0,0,271.65-105.1,425-92v863H0v-829Z" transform="translate(0 -10059.8)"/></svg>');
+}
+
+/*==============================-------------------------------------
+												index-v4.html
+=========================----------------------------------*/
+
+/*======================================================================================
+								1. INDEX-V4 welcome section
+===============================================================================*/
+
+.kolkatacity-welcome-section.beautypress-welcome-version-4 .kolkatacity-welcome-container {
+    height: 750px;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-4 .kolkatacity-welcome-container p {
+    font-size: 1.857em;
+    margin: 0 0 20px;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-4 .kolkatacity-welcome-container h3 {
+    margin: 0 0 50px;
+    letter-spacing: -2px;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-4 .kolkatacity-welcome-slider-item.kolkatacity-version-1 .kolkatacity-welcome-content-group:before {
+    background-image: url(../img/women_1.png);
+    width: 450px;
+    bottom: -50px;
+}
+
+/*======================================================================================
+								2. INDEX-V4 Our Features
+===============================================================================*/
+
+.beautypress-single-our-feature {
+    position: relative;
+    box-shadow: var(--hover-shadow);
+    overflow: hidden;
+}
+
+.beautypress-single-our-feature img {
+    width: 100%;
+}
+
+.beautypress-our-features-content {
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 0 10px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-our-features-content h3 {
+    color: var(--color-white);
+    letter-spacing: -2px;
+    font-size: 1.857em;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 25px;
+}
+
+.beautypress-single-our-feature i {
+    position: absolute;
+    right: -90px;
+    bottom: -50px;
+    font-size: 18em;
+    color: var(--color-white);
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    z-index: 1;
+    line-height: 1;
+}
+
+.beautypress-single-our-feature .kolkatacity-btn-wraper {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-single-our-feature:hover .beautypress-our-features-content {
+    bottom: 40px;
+}
+
+.beautypress-single-our-feature:hover .kolkatacity-btn-wraper {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*======================================================================================
+								3. INDEX-V4 Our Pricing
+===============================================================================*/
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-header-content {
+    position: static;
+    padding: 40px 40px 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-title h2 {
+    color: var(--color-semi-black);
+    font-size: 1.857em;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-title {
+    margin: 0 0 20px;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-price h4 {
+    color: #C8C8C8;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-price {
+    text-align: center;
+}
+
+.kolkatacity-single-pricing-table.kolkatacity-version-4 .kolkatacity-pricing-price h5 span {
+    vertical-align: inherit;
+    font-size: inherit;
+}
+
+/*==============================-------------------------------------
+												index-v5.html
+=========================----------------------------------*/
+
+/*======================================================================================
+								1. INDEX-V5 Header Section
+===============================================================================*/
+
+.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-landscape .nav-menu li a {
+    color: var(--color-white);
+    /*border-color: transparent;*/
+}
+
+.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-landscape .nav-menu li .nav-submenu li a {
+    color: var(--color-semi-black);
+}
+
+.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-landscape .nav-menu li .nav-submenu li a:hover {
+    color: var(--color-navy-blue);
+}
+
+.kolkatacity-main-header.bg-color-cyan .nav-menu .submenu-indicator-chevron {
+    border-color: transparent #FFFFFF #FFFFFF transparent;
+}
+
+.kolkatacity-main-header.bg-color-cyan .xs-navigation-middle-menu.xs_nav-landscape .nav-menu .nav-submenu {
+    background-color: var(--color-white);
+}
+
+/*.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-main-header .xs-navigation-middle-menu.xs_nav-landscape .nav-menu li a:hover {
+	color: var(--color-purple);
+}*/
+
+.kolkatacity-header-section.beautypress-header-version-4 .kolkatacity-version-2.kolkatacity-logo {
+    top: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.xs-navigation-middle-menu .xs-row {
+    width: 100%;
+}
+
+.xs-navigation-middle-menu .xs-row .xs-col-2 {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.kolkatacity-header-section.beautypress-header-version-4 .nav-header .xs-nav-logo {
+    display: none;
+}
+
+/*======================================================================================
+								2. INDEX-V5 welcome Section
+===============================================================================*/
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .kolkatacity-welcome-container {
+    width: 60%;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .kolkatacity-welcome-container h3 {
+    margin: 0 0 20px;
+    letter-spacing: -2px;
+    font-size: 4.286em;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .kolkatacity-welcome-container p {
+    font-size: 1.286em;
+    margin: 0 0 30px;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .kolkatacity-welcome-wraper {
+    position: relative;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .kolkatacity-welcome-wraper span.xsicon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    color: #b6b6b6;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 30em;
+    opacity: .1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .content-right .kolkatacity-welcome-wraper span {
+    justify-content: flex-start;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .content-left .kolkatacity-welcome-wraper span {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.kolkatacity-welcome-section.beautypress-welcome-version-5 .content-center .kolkatacity-welcome-wraper span {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*======================================================================================
+								3. INDEX-V5 Face & Beauty Care
+===============================================================================*/
+
+
+.icon-btn-with-text {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-btn-with-text:before {
+    position: absolute;
+    content: "\f105";
+    font-family: var(--font-icons-1);
+    color: var(--color-white);
+    box-shadow: var(--primary-shadow);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--color-chocolate);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    font-size: 1.143em;
+}
+
+.icon-btn-with-text:after {
+    position: absolute;
+    content: attr(data-title);
+    height: 100%;
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 50px;
+    top: 0;
+    color: var(--color-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.icon-btn-with-text:hover {
+    /*width: 186px;*/
+    padding: 0 100px;
+}
+
+.icon-btn-with-text:hover:before {
+    border-radius: 40px;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding: 0 37px;
+    background-color: var(--color-cyan);
+    box-shadow: var(--hover-shadow);
+}
+
+.icon-btn-with-text:hover:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    left: 0;
+}
+
+/*======================================================================================
+								4. INDEX-V5 About Us
+===============================================================================*/
+
+.beautypress-border-chocolate.beautypress-border.kolkatacity-version-2:before {
+    border-color: var(--color-chocolate);
+}
+
+.beautypress-vedio-section-with-text-v2 .beautypress-video-popup-content-inner:after {
+    background-image: none;
+}
+
+.beautypress-vedio-section-with-text-v2 .kolkatacity-big-sub-heading h2 {
+    font-size: 1.857em;
+}
+
+.beautypress-vedio-section-with-text-v2 .kolkatacity-big-sub-heading h3 {
+    font-size: 2.143em;
+}
+
+.beautypress-vedio-section-with-text-v2 .kolkatacity-big-sub-heading {
+    margin: 0 0 25px;
+}
+
+.beautypress-vedio-section-with-text-v2 .kolkatacity-simple-iocn-list.kolkatacity-version-2 ul li {
+    color: var(--color-chocolate);
+}
+
+/*======================================================================================
+								5. INDEX-V5 Popular Services
+===============================================================================*/
+
+.beautypress-popular-service-grid-item {
+    padding: 15px;
+}
+
+.beautypress-single-popular-service {
+    box-shadow: var(--primary-shadow);
+    background-color: var(--color-white);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-popular-service-header {
+    position: relative;
+}
+
+.beautypress-popular-service-content {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: var(--color-cyan);
+    height: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--color-white);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 0 32px;
+    border-radius: 40px;
+}
+
+.beautypress-popular-service-footer {
+    padding: 55px 10px 30px;
+    text-align: center;
+}
+
+.beautypress-popular-service-footer a {
+    display: block;
+    color: var(--color-semi-black);
+    font-size: 1.429em;
+    font-weight: 500;
+    text-transform: capitalize;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-popular-service-content h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.beautypress-single-popular-service:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.beautypress-single-popular-service:hover .beautypress-popular-service-footer a {
+    color: var(--color-chocolate);
+}
+
+.beautypress-single-popular-service:hover .beautypress-popular-service-content {
+    background-color: var(--color-chocolate);
+}
+
+/*======================================================================================
+								6. INDEX-V5 Video Section
+===============================================================================*/
+
+.beautypress-video-section.kolkatacity-version-2 {
+    /*background-color: var(--color-white);*/
+    padding: 0 0 100px;
+    position: relative;
+}
+
+.beautypress-video-section.kolkatacity-version-2:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/stone_1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 410px;
+    width: 479px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.beautypress-video-wraper {
+    padding: 130px 0;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .beautypress-video-section-content h2 {
+    color: var(--color-semi-black);
+    font-size: 2.857em;
+    font-weight: 500;
+    margin: 0 0 30px;
+    letter-spacing: -2px;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .beautypress-video-section-content a {
+    margin: 0 20px 0 0;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .beautypress-video-content {
+    text-align: left;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .beautypress-video-content p {
+    color: var(--color-semi-black);
+    font-size: 1.429em;
+    font-weight: 500;
+    font-family: inherit;
+    margin: 0 0 10px;
+    line-height: 1;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .beautypress-video-content h3 {
+    color: #666666;
+    margin: 0;
+    font-size: 1.429em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.beautypress-video-section.kolkatacity-version-2 .kolkatacity-spilit-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*======================================================================================
+								7. INDEX-V5 Expert Beautician
+===============================================================================*/
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-single-team.beautypress-white-overlay:after {
+    background-image: -webkit-linear-gradient( 90deg, rgb(77, 182, 172) 0%, rgb(226, 185, 163) 0%, rgba(232, 199, 181, 0.5) 20%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(77, 182, 172) 0%, rgb(226, 185, 163) 0%, rgba(232, 199, 181, 0.5) 20%, rgba(255, 255, 255, 0) 100%);
+}
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-team-content {
+    color: var(--color-semi-black);
+}
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-team-person-details h3 {
+    text-transform: capitalize;
+}
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-team-person-details h4 {
+    color: var(--color-semi-ash);
+}
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-single-team:hover .beautypress-team-person-details h4 {
+    color: #555555;
+}
+
+.beautypress-team-section.beautypress-team-section-v2 .beautypress-single-team:hover {
+    box-shadow: none;
+}
+
+.beautypress-team-wraper {
+    position: relative;
+}
+
+.beautypress-team-wraper:before {
+    position: absolute;
+    content: "";
+    bottom: -90px;
+    left: 0;
+    background-image: url(../img/stone_2.png);
+    height: 428px;
+    width: 428px;
+    background-repeat: no-repeat;
+}
+
+/*======================================================================================
+								8. INDEX-V5 Best Features
+===============================================================================*/
+
+.beautypress-best-features-wraper {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.beautypress-single-best-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0 50px;
+}
+
+.beautypress-single-best-feature:last-child {
+    margin: 0;
+}
+
+.beautypress-feature-icon {
+    padding: 0 30px 0 0;
+}
+
+.beautypress-feature-icon i {
+    color: var(--color-chocolate);
+    font-size: 6.2em;
+}
+
+.beautypress-feature-content h3 {
+    margin: 0 0 10px;
+    color: var(--color-semi-black);
+    font-weight: 500;
+    font-size: 1.429em;
+}
+
+.beautypress-feature-content p {
+    color: #888888;
+}
+
+.beautypress-image-slider {
+    position: relative;
+}
+
+.beautypress-single-slider-img {
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--primary-shadow);
+    margin: 60px 80px 0 0;
+}
+
+.beautypress-image-slider .owl-stage-outer {
+    position: relative;
+    padding: 0 20px 20px;
+}
+
+.beautypress-image-slider .owl-stage-outer:before {
+    position: absolute;
+    content: "";
+    top: -60px;
+    left: 60px;
+    height: 100%;
+    width: 100%;
+    background-color: #FEF5EF;
+    z-index: -1;
+}
+
+.beautypress-image-slider .owl-dot span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: var(--color-white);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-image-slider .owl-dot.active span {
+    background-color: var(--color-cyan);
+}
+
+.beautypress-image-slider .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.beautypress-image-slider .owl-dot {
+    margin: 0 10px 0 0;
+}
+
+.beautypress-image-slider .owl-dot:last-child {
+    margin: 0;
+}
+
+/*======================================================================================
+								9. INDEX-V5 Fun Fact Version 2
+===============================================================================*/
+
+
+/*======================================================================================
+								10. INDEX-V5 Client Review
+===============================================================================*/
+
+
+/*======================================================================================
+								11. INDEX-V5 Call to action
+===============================================================================*/
+
+/*======================================================================================
+								12. INDEX-V5 Footer section
+===============================================================================*/
+
+.kolkatacity-version-4.beautypress-footer-section:before,
+.kolkatacity-version-4.beautypress-footer-section:after {
+    display: none;
+}
+
+.kolkatacity-version-4.beautypress-footer-section {
+    padding: 100px 0 0;
+    background-image: none;
+}
+
+.kolkatacity-version-4.beautypress-footer-section .beautypress-footer-logo {
+    margin: 0 0 30px;
+}
+
+.kolkatacity-version-4.beautypress-footer-section .beautypress-footer-content p {
+    text-align: center;
+    color: #999999;
+    font-size: 1.143em;
+    margin: 0 0 30px;
+}
+
+.kolkatacity-version-4.beautypress-footer-section .beautypress-footer-content {
+    padding: 0 0 80px;
+    border-color: #D2D2D2;
+    margin: 0;
+}
+
+.beautypress-footer-menu {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.beautypress-footer-menu ul {
+    line-height: 1;
+}
+
+.beautypress-footer-menu ul li {
+    display: inline-block;
+    margin: 0 30px 10px 0;
+}
+
+.beautypress-footer-menu ul li:last-child {
+    margin: 0;
+}
+
+.beautypress-footer-menu ul li a {
+    color: #999999;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-footer-menu ul li a:hover {
+    color: var(--color-cyan);
+}
+
+.kolkatacity-version-4.beautypress-footer-section .beautypress-copyright-content {
+    background-color: var(--color-cyan);
+    padding: 30px 0;
+}
+
+.kolkatacity-version-4.beautypress-footer-section .beautypress-copyright-text {
+    padding: 0;
+}
+
+/* back to top init */
+
+.beautypress-back-to-top-group {
+    position: relative;
+}
+
+.beautypress-back-to-top-wraper {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    z-index: 999999;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    height: 60px;
+    width: 60px;
+}
+
+.beautypress-back-to-top-wraper.show-last-pos {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.beautypress-back-to-top-wraper.show-last-pos.active {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+.back-to-top-center {
+    right: inherit;
+    transform: translateX(-50%) !important;
+    left: 50%;
+}
+
+.back-to-top-center.beautypress-back-to-top-wraper {
+    height: 40px;
+    width: 40px;
+    bottom: 22px;
+}
+
+.back-to-top-center.beautypress-back-to-top-wraper a {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.beautypress-btn-2.back-to-top:hover {
+    background-color: var(--color-semi-black) !important;
+}
+
+.beautypress-btn-2.back-to-top {
+    height: 100%;
+    width: 100%;
+    font-size: 1.429em;
+}
+
+.beautypress-btn-2.back-to-top.bg-dark-green:hover {
+    background-color: var(--light-red) !important;
+}
+
+/*===================================================================
+										Inner page start
+=============================================================================*/
+
+/*=========================================================================
+								1. INNER PAGE header section
+=============================================================================*/
+
+.kolkatacity-header-section.beautypress-inner-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all .4s ease;
+}
+
+.kolkatacity-header-section.beautypress-inner-menu .kolkatacity-main-header {
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+/* fixed menu css */
+
+.kolkatacity-header-section.navbar-fixed.off-canvas {
+    top: -100px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.kolkatacity-header-section.navbar-fixed {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.kolkatacity-header-section.navbar-fixed.fixed {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* menu skew animation */
+
+.kolkatacity-header-section.navbar-fixed.off-canvas.menu-skew {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    /*transform-style: preserve-3d;
+	perspective: 1000px;*/
+}
+
+.menu-skew {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    will-change: transform;
+}
+
+@media (max-width: 480px) {
+    .menu-skew {
+        animation-fill-mode: none;
+        will-change: unset;
+    }
+}
+
+@-webkit-keyframes swingInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(-90deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+@-moz-keyframes swingInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(-90deg);
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+@-o-keyframes swingInX {
+    0% {
+        -o-transform: perspective(400px) rotateX(-90deg);
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+@keyframes swingInX {
+    0% {
+        transform: perspective(400px) rotateX(-90deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+.menu-skew.swingInX {
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ie-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-backface-visibility: hidden !important;
+    -webkit-animation-name: swingInX;
+    -moz-backface-visibility: hidden !important;
+    -moz-animation-name: swingInX;
+    -o-backface-visibility: hidden !important;
+    -o-animation-name: swingInX;
+    backface-visibility: hidden !important;
+    animation-name: swingInX;
+}
+
+@media (max-width: 480px) {
+    .menu-skew.swingInX {
+        animation-name: none;
+        transform-origin: unset;
+    }
+}
+
+@-webkit-keyframes swingOutX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(-90deg);
+    }
+}
+
+@-moz-keyframes swingOutX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(-90deg);
+    }
+}
+
+@-o-keyframes swingOutX {
+    0% {
+        -o-transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(-90deg);
+    }
+}
+
+@keyframes swingOutX {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(-90deg);
+    }
+}
+
+.menu-skew.swingOutX {
+    -webkit-transform-origin: top;
+    -webkit-animation-name: swingOutX;
+    -webkit-backface-visibility: hidden !important;
+    -moz-animation-name: swingOutX;
+    -moz-backface-visibility: hidden !important;
+    -o-animation-name: swingOutX;
+    -o-backface-visibility: hidden !important;
+    animation-name: swingOutX;
+    backface-visibility: hidden !important;
+}
+
+@media (max-width: 480px) {
+    .menu-skew.swingOutX {
+        animation-name: none;
+        transform-origin: unset;
+    }
+}
+
+/*=========================================================================
+								2. INNER PAGE welcome section
+=============================================================================*/
+
+.beautypress-inner-welocme-section {
+    position: relative;
+    padding: 300px 0 180px;
+    text-align: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.beautypress-inner-welocme-section .beautypress-black-overlay {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.beautypress-inner-welcome-content {
+    width: 66.6666667%;
+    margin: 0 auto;
+}
+
+.beautypress-inner-welcome-content img {
+    margin: 0 0 40px;
+}
+
+.beautypress-inner-welcome-content h1 {
+    margin: 0 0 20px;
+    font-size: 4.286em;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
+
+.beautypress-inner-welcome-content p {
+    font-size: 1.143em;
+}
+
+.beautypress-inner-welcome-footer-content {
+    position: absolute;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="369.781" height="48" viewBox="0 0 369.781 48"><path fill="%23FFFFFF"  d="M1145,740s-4-33-30-33H985s-23.5-2.5-25-15v48h185Zm-369.782,0s4-33,29.973-33h129.84S958.5,704.5,960,692v48H775.218Z" transform="translate(-775.219 -692)"/></svg>');
+    bottom: -2px;
+    backface-visibility: hidden;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 48px;
+    width: 369.781px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.beautypress-breadcrumb li {
+    display: inline-block;
+    padding: 0 12px 0 0;
+    position: relative;
+}
+
+.beautypress-breadcrumb li:before {
+    position: absolute;
+    content: "/";
+    right: 0;
+    top: 0;
+    color: #B9B9B9;
+}
+
+.beautypress-breadcrumb li:last-child:before {
+    display: none;
+}
+
+.beautypress-breadcrumb li:last-child {
+    padding: 0;
+}
+
+.beautypress-breadcrumb li a {
+    color: #B9B9B9;
+    display: block;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    text-transform: capitalize;
+}
+
+.beautypress-breadcrumb li:last-child a {
+    color: var(--color-purple);
+    pointer-events: none;
+}
+
+/*=========================================================================
+								3. INNER PAGE square service section
+=============================================================================*/
+
+.beautypress-single-square-service-content {
+    padding: 0 40px;
+    min-height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 5;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    width: calc(100% - 20px);
+}
+
+.beautypress-single-square-service-content i {
+    color: var(--color-purple);
+    font-size: 5em;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    margin: 0 0 30px;
+    display: inline-block;
+}
+
+.beautypress-single-square-service-content h2 {
+    margin: 0 0 20px;
+    color: #444444;
+    font-size: 2.143em;
+    text-transform: capitalize;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-single-square-service-content p {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-single-square-service-content:hover h2,
+.beautypress-single-square-service-content:hover p,
+.beautypress-single-square-service-content:hover i {
+    color: var(--color-white);
+}
+
+.beautypress-single-square-service-content:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: var(--primary-shadow);
+    z-index: -1;
+}
+
+.beautypress-overlay-with-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-purple);
+    z-index: -2;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    pointer-events: none;
+}
+
+.beautypress-overlay-with-img:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.beautypress-overlay-with-img.img-1:before {
+    background-image: url(../img/square-service-bg.jpg);
+}
+
+.beautypress-overlay-with-img.img-2:before {
+    background-image: url(../img/skin_care.jpg);
+}
+
+.beautypress-overlay-with-img.img-3:before {
+    background-image: url(../img/spa_care.jpg);
+}
+
+.beautypress-single-square-service-content:hover .beautypress-overlay-with-img {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.beautypress-single-square-service-content:hover:before {
+    background-color: var(--color-purple);
+    opacity: .9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    box-shadow: var(--hover-shadow);
+}
+
+.beautypress-single-square-service-content:hover .beautypress-overlay-with-img:before {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*=========================================================================
+								4. INNER PAGE Popular Services
+=============================================================================*/
+
+.beautypress-popular-service-section.kolkatacity-version-2 .beautypress-popular-service-content {
+    background-color: var(--color-purple);
+}
+
+.beautypress-popular-service-section.kolkatacity-version-2 .beautypress-single-popular-service:hover .beautypress-popular-service-footer a {
+    color: var(--color-pink);
+}
+
+.beautypress-popular-service-section.kolkatacity-version-2 .beautypress-single-popular-service:hover .beautypress-popular-service-content {
+    background-color: var(--color-pink);
+}
+
+/*=========================================================================
+								5. INNER PAGE Contact.html
+=============================================================================*/
+
+#beautypress_maps {
+    height: 570px;
+    width: 100%;
+}
+
+.beautypress-contact-us-section {
+    padding: 100px 0 0;
+}
+
+.beautypress-contact-wraper.kolkatacity-version-1 {
+    margin: 0 0 -238px;
+}
+
+.beautypress-contact-wraper {
+    background-color: var(--color-white);
+    box-shadow: var(--hover-shadow);
+    position: relative;
+    z-index: 99;
+    padding: 0 40px 0 0;
+}
+
+.beautypress-contact-details {
+    height: 100%;
+    padding: 45px 40px 55px;
+}
+
+.beautypress-separetor-sub-heading.kolkatacity-version-2 h2 {
+    color: var(--color-white);
+    font-weight: 500;
+    letter-spacing: -2px;
+    font-size: 1.857em;
+}
+
+.beautypress-separetor-sub-heading.kolkatacity-version-2:before {
+    background-color: rgb(87, 9, 135);
+    width: 200px;
+    height: 1px;
+}
+
+.beautypress-icon-with-text li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -ms-grid-columns: 60px calc(100% - 60px);
+    grid-template-columns: 60px calc(100% - 60px);
+    color: var(--color-white);
+    margin: 0 0 20px;
+}
+
+.beautypress-icon-with-text li:last-child {
+    margin: 0;
+}
+
+.beautypress-icon-with-text li i {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--color-white);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.143em;
+}
+
+.beautypress-contact-us-section .beautypress-contact-form {
+    height: 100%;
+}
+
+.beautypress-contact-us-section .beautypress-contact-form form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.beautypress-contact-form input:not([type="submit"]),
+.beautypress-contact-form textarea {
+    width: 100%;
+    display: block;
+    height: 50px;
+    background-color: var(--color-white);
+    border: 2px solid #F0F0F0;
+    padding: 0 20px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-contact-form textarea {
+    padding: 20px;
+    height: 90px;
+    resize: none;
+}
+
+.beautypress-contact-form input[type="submit"] {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--color-purple);
+    padding: 0 46px;
+    box-shadow: var(--hover-shadow);
+    border: 0;
+    height: 50px;
+    border-radius: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.beautypress-contact-form .input-group {
+    margin: 0 0 20px;
+    position: relative;
+    padding: 0;
+    display: block;
+}
+
+.beautypress-contact-form .input-group-addon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: #BFBFBF;
+    pointer-events: none;
+}
+
+.beautypress-contact-form .kolkatacity-spilit-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.beautypress-contact-form input::-webkit-input-placeholder,
+.beautypress-contact-form textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #BFBFBF;
+}
+
+.beautypress-contact-form input::-moz-placeholder,
+.beautypress-contact-form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #BFBFBF;
+}
+
+.beautypress-contact-form input:-ms-input-placeholder,
+.beautypress-contact-form textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #BFBFBF;
+}
+
+.beautypress-contact-form input:-moz-placeholder,
+.beautypress-contact-form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #BFBFBF;
+}
+
+.c_error_massage {
+    /*position: absolute;*/
+    /*top: -23px;*/
+    /*left: 0;*/
+    margin: 0 !important;
+    font-size: 1em !important;
+    text-transform: capitalize;
+}
+
+/*=========================================================================
+								6. INNER PAGE Contact-v2.html
+=============================================================================*/
+
+.kolkatacity-version-2#beautypress_maps_2 {
+    height: 300px;
+    width: 100%;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 60px;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 h3 {
+    margin: 0 0 10px;
+    font-size: 2.143em;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 h4 {
+    margin: 0 0 30px;
+    font-size: 1.429em;
+    font-weight: 400;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 .beautypress-subscribe {
+    height: 60px;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input:not([type="submit"]) {
+    background-color: #61188F;
+    border-color: transparent;
+    background-color: var(--color-white);
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input[type="submit"] {
+    border: 2px solid var(--color-white);
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #A672C7;
+    font-size: 0.857em;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #A672C7;
+    font-size: 0.857em;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #A672C7;
+    font-size: 0.857em;
+}
+
+.beautypress-subscribe-wraper.beautypress-version-3 input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #A672C7;
+    font-size: 0.857em;
+}
+
+.beautypress-contact-details.kolkatacity-version-2 {
+    border: 10px solid var(--color-purple);
+    padding: 45px 50px 50px;
+}
+
+.beautypress-separetor-sub-heading.beautypress-version-3 h2 {
+    font-size: 1.857em;
+}
+
+.beautypress-separetor-sub-heading.beautypress-version-3 {
+    margin: 0 0 20px;
+}
+
+.beautypress-separetor-sub-heading.beautypress-version-3:before {
+    width: 100px;
+}
+
+.beautypress-contact-text p {
+    color: #999999;
+    margin: 0 0 15px;
+}
+
+.beautypress-contact-text p:last-child {
+    margin: 0;
+}
+
+.beautypress-contact-text b {
+    font-weight: 400;
+    color: var(--color-semi-black);
+    padding: 0 5px 0 0;
+}
+
+/*=========================================================================
+								7. INNER PAGE blog.html
+=============================================================================*/
+
+.beautypress-newsfeed-section .beautypress-pagination {
+    margin-top: 40px;
+}
+
+.beautypress-pagination {
+    text-align: center;
+}
+
+.beautypress-pagination li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.beautypress-pagination li:last-child {
+    margin: 0;
+}
+
+.beautypress-pagination li a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 2px solid #F4F4F4;
+    background-color: var(--color-white);
+    height: 36px;
+    width: 36px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    color: #A3A3A3;
+    font-size: 1.143em;
+}
+
+.beautypress-pagination li a:hover {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    box-shadow: var(--hover-shadow);
+}
+
+/*=========================================================================
+								8. INNER blog-post.html content
+=============================================================================*/
+
+.beautypress-blog-post-wraper img {
+    margin: 0 0 40px;
+}
+
+.beautypress-tag a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    box-shadow: var(--primary-shadow);
+    height: 30px;
+    border-radius: 4px;
+    padding: 0 21px;
+    text-transform: uppercase;
+    color: var(--color-semi-ash);
+    font-size: 0.857em;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.beautypress-tag a:hover {
+    color: var(--color-purple);
+}
+
+.beautypress-tag a:last-child {
+    margin: 0;
+}
+
+.beautypress-blog-post-wraper .beautypress-tag a {
+    margin: 0 10px 10px 0;
+}
+
+.beautypress-blog-post-wraper .beautypress-tag {
+    margin: 0 0 15px;
+}
+
+.beautypress-blog-post-wraper h2 {
+    margin: 0 0 25px;
+    color: #444444;
+    font-size: 2.143em;
+}
+
+.firstcharacter {
+    color: #666666;
+    font-size: 6.286em;
+    text-transform: uppercase;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    padding: 0 10px 0 0;
+}
+
+.beautypress-blog-post-wraper p {
+    margin: 0 0 40px 0;
+    line-height: 1.875;
+}
+
+.beautypress-blog-post-wraper blockquote {
+    margin: 0 0 40px;
+    background-color: #F7F7F7;
+    box-shadow: var(--primary-shadow);
+    padding: 35px 50px;
+    border-left: 6px solid var(--color-purple);
+    position: relative;
+    font-style: italic;
+    color: #949494;
+    line-height: 1.857;
+    z-index: 1;
+}
+
+.beautypress-blog-post-wraper blockquote:before {
+    position: absolute;
+    content: "\f10d";
+    top: 50%;
+    left: 18px;
+    font-family: var(--font-icons-1);
+    color: #DEDEDE;
+    font-size: 7em;
+    line-height: 1;
+    z-index: -1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.beautypress-blog-post-group .kolkatacity-spilit-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.beautypress-share-timeline {
+    background-color: #F7F7F7;
+    box-shadow: var(--primary-shadow);
+    padding: 15px 30px;
+    margin: 0 0 40px;
+}
+
+.beautypress-simple-title h3,
+.beautypress-simple-title a {
+    margin: 0;
+    color: var(--color-semi-black);
+    font-size: 1.429em;
+    display: block;
+    font-weight: 500;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    line-height: inherit;
+}
+
+.beautypress-simple-title span {
+    color: var(--color-purple);
+}
+
+.beautypress-simple-title h5 {
+    margin: 0 0 10px;
+    color: #C7C7C7;
+    font-size: 1.143em;
+    text-transform: capitalize;
+}
+
+.beautypress-simple-title a:hover {
+    color: var(--color-purple);
+}
+
+/*.beautypress-react-container .beautypress-simple-title ,*/
+
+.beautypress-replay-container .beautypress-simple-title {
+    padding: 0 30px;
+}
+
+.beautypress-react-container,
+.beautypress-replay-container {
+    box-shadow: var(--primary-shadow);
+    background-color: var(--color-white);
+    padding: 30px;
+}
+
+.beautypress-react li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 30px 10px 0;
+}
+
+.beautypress-react li:last-child {
+    margin: 0;
+}
+
+.beautypress-react li a {
+    font-size: 3em;
+    color: #b0b0b0;
+    margin: 0 10px 0 0;
+    line-height: 1;
+}
+
+.beautypress-react li span {
+    color: #CECDCD;
+    text-transform: capitalize;
+}
+
+/*.beautypress-replay-container {
+		margin: 0 0 40px;
+}*/
+
+.beautypress-replay-form-wraper input:not([type="submit"]),
+.beautypress-replay-form-wraper textarea {
+    width: 100%;
+    display: block;
+    height: 50px;
+    border: 2px solid #F8F8F8;
+    padding: 0 18px;
+    background-color: var(--color-white);
+    border-radius: 0;
+}
+
+.beautypress-replay-form-wraper .form-control:focus {
+    box-shadow: none;
+    border-color: var(--color-purple);
+}
+
+.beautypress-replay-form-wraper textarea {
+    height: 120px;
+    padding: 18px;
+    resize: none;
+}
+
+.beautypress-replay-form-wraper .form-group {
+    margin: 0;
+}
+
+.beautypress-replay-form-wraper input[type="submit"] {
+    background-color: var(--color-purple);
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 40px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    box-shadow: var(--primary-shadow);
+}
+
+.beautypress-replay-form-wraper input[type="submit"]:hover {
+    background-color: var(--color-pink-2);
+}
+
+.beautypress-replay-form-wraper .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #B3B3B3;
+    font-size: 1em;
+}
+
+.beautypress-replay-form-wraper .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #B3B3B3;
+    font-size: 1em;
+}
+
+.beautypress-replay-form-wraper .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #B3B3B3;
+    font-size: 1em;
+}
+
+.beautypress-replay-form-wraper .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #B3B3B3;
+    font-size: 1em;
+}
+
+.beautypress-replay-answer-container {
+    padding: 30px;
+    background-color: var(--color-white);
+    box-shadow: var(--primary-shadow);
+    margin: 0 0 40px;
+}
+
+.beautypress-single-replay {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70px calc(100% - 90px);
+    grid-template-columns: 70px calc(100% - 90px);
+    grid-column-gap: 20px;
+    margin: 0 0 30px;
+}
+
+.beautypress-replay-text {
+    margin: 10px 0 0;
+}
+
+.beautypress-replayer-img img {
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.beautypress-replay-name h5 {
+    margin: 0;
+    color: #000000;
+    font-size: 1em;
+}
+
+.beautypress-replay-time {
+    text-align: right;
+}
+
+.beautypress-replay-time h6 {
+    color: #ABABAB;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+}
+
+.beautypress-replay-text .kolkatacity-spilit-container {
+    margin: 0 0 15px;
+}
+
+.beautypress-replay-text p {
+    margin: 0 0 10px;
+    color: #999999;
+    line-height: 1.8;
+}
+
+.beautypress-socail-react li {
+    display: inline-block;
+    color: #7E7E7E;
+    margin: 0 24px 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.beautypress-socail-react li a {
+    text-transform: capitalize;
+}
+
+.beautypress-socail-react li:last-child {
+    margin: 0;
+}
+
+.beautypress-single-replay.beautypress-replay {
+    padding: 0 0 0 89px;
+}
+
+/* side bar */
+
+.beautypress-single-sidebar {
+    background-color: var(--color-white);
+    padding: 30px 20px;
+    box-shadow: var(--primary-shadow);
+    margin: 0 0 30px;
+}
+
+.beautypress-single-sidebar:last-child {
+    margin: 0;
+}
+
+.beautypress-sidebar-heading {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    position: relative;
+}
+
+.beautypress-sidebar-heading:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    background-color: #EDEDED;
+}
+
+.beautypress-sidebar-heading h3 {
+    margin: 0;
+    color: #444444;
+    font-weight: 500;
+    font-size: 1.429em;
+    text-transform: capitalize;
+}
+
+.beautypress-single-latest-news {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px calc(100% - 120px);
+    grid-template-columns: 100px calc(100% - 120px);
+    grid-column-gap: 20px;
+    margin: 0 0 20px;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.beautypress-latest-post-img img {
+    width: 100%;
+}
+
+.beautypress-single-latest-news:last-child {
+    margin: 0;
+}
+
+.beautypress-latest-post-content a {
+    display: block;
+    color: var(--color-semi-black);
+    margin: 0 0 12px;
+}
+
+.beautypress-latest-post-content i {
+    color: #999999;
+    font-size: 0.857em;
+    text-transform: capitalize;
+}
+
+.beautypress-category-list li a {
+    color: var(--color-semi-ash);
+    display: inline-block;
+}
+
+.beautypress-category-list li {
+    margin: 0 0 15px;
+}
+
+.beautypress-category-list li:last-child {
+    margin: 0;
+}
+
+.beautypress-category-list li i {
+    color: var(--color-purple);
+    padding: 0 4px 0 0;
+}
+
+.beautypress-single-sidebar .beautypress-tag a {
+    margin: 0 4px 10px 0;
+}
+
+.beautypress-demoFeed {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.beautypress-demoFeed li a {
+    display: block;
+}
+
+.beautypress-demoFeed li a img {
+    border-radius: 4px;
+    height: 60px;
+    box-shadow: var(--hover-shadow);
+    display: block;
+}
+
+/*=========================================================================
+								9. INNER faq.html content
+=============================================================================*/
+
+.beautypress-accordion .collapse.in {
+    display: block;
+}
+
+/* beautypress-accordion common style */
+
+.beautypress-accordion .panel-heading a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--color-semi-black);
+    font-size: 1.143em;
+    position: relative;

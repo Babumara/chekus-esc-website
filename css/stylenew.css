@@ -1,0 +1,693 @@
+.bg-light-header {
+  background-color: #640000 !important;
+}
+
+.kolkatacity-about-section {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 5.6%,
+    rgb(147, 3, 3) 97.7%
+  );
+}
+
+.kolkatacity-new-about-text-gruop
+  .kolkatacity-sub-heading.kolkatacity-watermark-title
+  h1 {
+  font-weight: 700;
+  font-size: 45px;
+  z-index: 1;
+  font-family: var(--font-cursive);
+  color: white;
+  margin: 0px;
+  text-align: left;
+}
+
+.kolkatacity-new-about-text-gruop p {
+  margin: 30px 0 40px;
+  font-size: 16px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  max-width: 100%;
+}
+
+.kolkatacity-new-about-text-gruop {
+  /*  height: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 10px;
+  text-align: justify;
+}
+
+.kolkatacity-new-about-text-gruop
+  .kolkatacity-sub-heading.kolkatacity-watermark-title
+  h2:before {
+  color: #f0f0f0;
+  font-size: 2.419em;
+  z-index: -1;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  left: -55px;
+  top: 30px;
+  display: none;
+}
+
+.kolkatacity-gradient-separetor {
+  display: block;
+  height: 2px;
+  width: 130px;
+  background-image: -webkit-linear-gradient(
+    175deg,
+    rgba(236, 85, 152, 0) 0%,
+    rgba(236, 85, 152, 0.26) 24%,
+    rgba(236, 85, 152, 0.5) 46%,
+    rgb(236, 85, 152) 100%
+  );
+  background-image: -ms-linear-gradient(
+    175deg,
+    rgba(236, 85, 152, 0) 0%,
+    rgba(236, 85, 152, 0.26) 24%,
+    rgba(236, 85, 152, 0.5) 46%,
+    rgb(236, 85, 152) 100%
+  );
+}
+
+.kolkatacity-new-about-img-wraper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.kolkatacity-new-single-about-img-group {
+  margin: 0 0 40px;
+}
+
+.kolkatacity-new-single-about-img-group:last-child {
+  margin: 0;
+}
+
+.kolkatacity-new-single-about-img img,
+.kolkatacity-new-single-about-img .kolkatacity-3d-project-card {
+  border-radius: 10px;
+}
+
+.kolkatacity-new-single-about-img img {
+  width: 100%;
+}
+
+.kolkatacity-new-single-about-img .kolkatacity-3d-project-card {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.kolkatacity-new-about-img-wraper {
+  position: relative;
+  z-index: 2;
+}
+
+.kolkatacity-new-about-img-wraper:before,
+.kolkatacity-new-about-img-wraper:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  z-index: -1;
+}
+
+.kolkatacity-new-single-about-img img {
+  width: 100%;
+}
+
+.section-padding {
+  padding: 25px 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.prfl-bg {
+  background-image: url(../img/backgroundf.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.our_galleryh {
+  margin: 0 0 40px;
+  color: white;
+  font-family: var(--font-cursive);
+  font-size: 50px;
+  text-align: center;
+}
+
+.girl-img img,
+.avl-nw img {
+  width: 100%;
+  display: block;
+}
+
+.girls-list {
+  top: auto;
+  left: auto;
+  position: relative;
+  width: 24%;
+  margin: 0 0 30px 0;
+  padding: 5px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.girls-profile-content {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kolkatacity-simple-text-with-img-section {
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 5.6%,
+    rgb(147, 3, 3) 97.7%
+  );
+  padding: 25px 20px;
+}
+
+.kolkatacity-simple-text-content p {
+  color: white;
+  font-size: 1.143em;
+  margin: 0;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.kolkatacity-simple-text.kolkatacity-version-2 .kolkatacity-big-sub-heading h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.kolkatacity-big-sub-heading h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-cursive);
+  color: white;
+  font-size: 45px;
+}
+
+.kolkata-city-details {
+  background-image: url(../img/bg1.gif);
+  padding: 50px 0px;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.84);
+  border: 1px solid #ffe3a2;
+  padding: 15px;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #ffe3a2;
+  line-height: 52px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.bg p {
+  color: #ffe3a2;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 244, 230, 0) 0px,
+    #ffe3a2 25%,
+    #ffe3a2 75%,
+    rgba(255, 244, 230, 0) 100%
+  );
+  margin: 0px 15%;
+}
+
+.kolkatacity-vedio-section-with-text {
+  background-image: url(../img/backgroundf.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kolkatacity-big-sub-heading h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-cursive);
+  color: white;
+  font-size: 45px;
+}
+
+.kolkatacity-big-sub-heading h3 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.kolkatacity-video-side-text p {
+  margin: 0 0 30px;
+  line-height: 2.1;
+  text-align: justify;
+  color: white;
+}
+
+.kolkatacity-video-side-text
+  .kolkatacity-simple-iocn-list.kolkatacity-version-2 {
+  margin: 0 0 40px;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 11px 0 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul li {
+  margin: 0;
+  color: #ec5598;
+  padding: 0 11px 0 0;
+}
+
+.kolkatacity-simple-iocn-list.kolkatacity-version-2 ul li i {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #dedede;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  margin: 0 12px 0 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kolkatacity-pricing-table-section {
+  position: relative;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 5.6%,
+    rgb(147, 3, 3) 97.7%
+  );
+  padding: 0px 0px 50px;
+}
+
+.kolkatacity-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.kolkatacity-section-headinig {
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+.kolkatacity-pricing-table-section .kolkatacity-section-headinig p {
+  margin: 0 0 12px;
+  color: white;
+  font-family: var(--font-cursive);
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.beautypress-purple-overlay:before {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(211, 16, 39) 0%,
+    rgb(125, 0, 254) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(211, 16, 39) 0%,
+    rgb(125, 0, 254) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.kolkatacity-pink-overlay:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.kolkatacity-pricing-footer {
+  padding: 40px 30px;
+}
+
+.kolkatacity-pricing-footer .kolkatacity-both-side-list {
+  margin: 0 0 42px;
+}
+
+.kolkatacity-both-side-list li {
+  display: flex;
+  font-size: 1.143em;
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+.kolkatacity-single-pricing-table {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.kolkatacity-pricing-title h2 {
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 2.143em;
+  letter-spacing: -2px;
+}
+
+.kolkatacity-pricing-title,
+.kolkatacity-pricing-price {
+  flex: 1;
+}
+
+.kolkatacity-pricing-header-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--color-white);
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+.kolkatacity-pricing-price {
+  text-align: right;
+}
+
+.kolkatacity-pricing-price p {
+  margin: 0 0 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.kolkatacity-pricing-price .price {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.kolkatacity-pricing-header {
+  position: relative;
+}
+
+.kolkatacity-both-side-list li span {
+  text-align: right;
+  color: #444444;
+  flex: 1;
+}
+
+.xs-btn {
+  overflow: hidden;
+  /* margin: 1rem auto; */
+  text-transform: uppercase;
+  background: #6a1b9a;
+  border-radius: 25px;
+  padding: 15px 36px;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.kolkatacity-btn-wraper a:last-child {
+  margin: 0;
+}
+
+.xs-btn.box-shadow-btn {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.kolkatacity-btn-wraper a:last-child {
+  margin: 0;
+}
+
+.kolkatacity-pricing-footer .kolkatacity-btn-wraper {
+  text-align: center;
+}
+
+
+
+.whatsapp-button,
+.call-button {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+  margin: 10px 10px;
+  /* Adjust margin as needed */
+  z-index: 9999;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  margin-top: -50px;
+  /* Adjust to position one button above the other */
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
+}
+
+.call-button {
+  background-color: #8a2be2;
+  /* Violet background for the call button */
+  margin-top: 50px;
+  /* Adjust to position one button below the other */
+  box-shadow: 0 0 0 rgba(138, 43, 226, 0.4);
+}
+
+.whatsapp-button i{
+  color: white;
+  font-size: 2.5rem;
+}
+.call-button i {
+    font-size: 2rem;
+    color: white;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 0 rgba(73, 80, 75, 0.897);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.call-button {
+  animation: pulse-violet 2s infinite;
+}
+
+@keyframes pulse-violet {
+  0% {
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+  }
+}
+
+/* .iconwa {
+  position: relative;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.iconph {
+  position: relative;
+  font-size: 3rem;
+  color: white;
+}
+
+.whatsapp-button a {
+  position: absolute;
+  right: 9px;
+  top: 6px;
+} */
+
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    .whatsapp-button,
+    .call-button {
+      width: 15%;
+      height: 7%;
+    }
+
+    .whatsapp-button i{
+      font-size: 4rem;
+    }
+  
+  }
+  @media screen and (min-width: 481px) and (max-width: 505px) {
+    .whatsapp-button,
+    .call-button {
+      width: 15%;
+      height: 7%;
+    }
+
+    .whatsapp-button i{
+      font-size: 3rem;
+    }
+  
+  }
+  @media screen and (min-width: 506px) and (max-width: 550px) {
+    .whatsapp-button,
+    .call-button {
+      width: 15.4%;
+      height: 8%;
+    }
+
+    .whatsapp-button i{
+      font-size: 3rem;
+    }
+  }
+
+  
+
+
+.nav-link {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: white !important;
+  display: block;
+}
+
+.navbar-light .navbar-brand {
+  color: rgb(255 255 255 / 100%) !important;
+}
+
+.hotel-bg {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 5.6%,
+    rgb(147, 3, 3) 97.7%
+  );
+  padding: 25px 0px;
+  position: relative;
+}
+
+.our_galleryh {
+  margin: 0 0 40px;
+  color: white;
+  font-family: var(--font-cursive);
+  font-size: 50px;
+  text-align: center;
+}
+
+.flipchar {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  animation: mirrorflip 10s 0s linear infinite;
+  color: #f66e49;
+}
+
+.hotel li a {
+  font-size: 30px;
+  color: white;
+  font-family: cursive;
+}
+
+.arealist {
+  position: fixed;
+  z-index: -10;
+}
